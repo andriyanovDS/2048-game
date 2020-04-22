@@ -20,6 +20,7 @@
 		0A3D8DF1244F5E5000801ABF /* GameboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D8DF0244F5E5000801ABF /* GameboardViewModel.swift */; };
 		0A3D8DF3244F62FF00801ABF /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D8DF2244F62FF00801ABF /* Board.swift */; };
 		0A3D8DF5244F7B7E00801ABF /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D8DF4244F7B7E00801ABF /* CellView.swift */; };
+		0A3D8DF72450A23600801ABF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0A3D8DF62450A23600801ABF /* .gitignore */; };
 		9FE20B2FA17C14606478DDD5 /* Pods_Game2048.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D57193E9DAD4B3741434A7 /* Pods_Game2048.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		0A3D8DF0244F5E5000801ABF /* GameboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardViewModel.swift; sourceTree = "<group>"; };
 		0A3D8DF2244F62FF00801ABF /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		0A3D8DF4244F7B7E00801ABF /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		0A3D8DF62450A23600801ABF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		752506091630483995096D81 /* Pods-Game2048.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game2048.release.xcconfig"; path = "Target Support Files/Pods-Game2048/Pods-Game2048.release.xcconfig"; sourceTree = "<group>"; };
 		B9D57193E9DAD4B3741434A7 /* Pods_Game2048.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Game2048.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6BB6F0583BE73EEBCF72DE4 /* Pods-Game2048.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game2048.debug.xcconfig"; path = "Target Support Files/Pods-Game2048/Pods-Game2048.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		0A3D8DAB244F54A300801ABF = {
 			isa = PBXGroup;
 			children = (
+				0A3D8DF62450A23600801ABF /* .gitignore */,
 				0A3D8DE9244F55A800801ABF /* Podfile */,
 				0A3D8DB6244F54A300801ABF /* Game2048 */,
 				0A3D8DCD244F54A400801ABF /* Game2048Tests */,
@@ -281,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3D8DF72450A23600801ABF /* .gitignore in Resources */,
 				0A3D8DC4244F54A400801ABF /* LaunchScreen.storyboard in Resources */,
 				0A3D8DC1244F54A400801ABF /* Assets.xcassets in Resources */,
 				0A3D8DEA244F55A800801ABF /* Podfile in Resources */,

@@ -1,0 +1,18 @@
+## Build generated
+build/
+DerivedData/
+Pods/
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## User settings
+xcuserdata/
+
+**/.idea/*
+.DS_Store
+.AppleDouble
+.LSOverride
