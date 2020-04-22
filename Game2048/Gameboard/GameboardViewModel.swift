@@ -15,6 +15,7 @@ class GameboardViewModelImpl: GameboardViewModel {
   }
   var score: Int = 0
   private let board: Board
+  private var isGameCompleted: Bool = false
   
   init(size: Int) {
     self.size = size
@@ -71,6 +72,14 @@ class GameboardViewModelImpl: GameboardViewModel {
     delegate.viewModel(self, cellPositionsDidChangeWithMovements: movements)
     let cell = board.addCell()
     delegate.viewModel(self, insertCell: cell)
+    if board.cells.count == size * size {
+      delegate.onGameComplete(withResult: .fail)
+      return
+    }
+    if !isGameCompleted && board.cells.contains(where: { $0.value == 2048 }) {
+      isGameCompleted = true
+      delegate.onGameComplete(withResult: .win)
+    }
   }
   
   private func updateScore(after movements: [Movement]) {

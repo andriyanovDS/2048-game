@@ -9,6 +9,9 @@
 import Foundation
 
 class Board {
+  typealias RandomValueGenerator = (ClosedRange<Int>) -> Int
+  typealias RandomPositionGenerator = ([IndexPath]) -> IndexPath
+  
   private let size: Int
   private(set) var positions: [IndexPath: PositionValue] = [:]
   private(set) var cells: [Cell] = []
@@ -17,13 +20,21 @@ class Board {
       positions[key] == .empty
     }
   }
+  private let randomCellValueGenerator: RandomValueGenerator
+  private let randomCellPositionGenerator: RandomPositionGenerator
   
   private struct Constants {
     static let initialCellCount: Int = 2
   }
   
-  init(size: Int) {
+  init(
+    size: Int,
+    randomCellValueGenerator: @escaping RandomValueGenerator = Int.random,
+    randomCellPositionGenerator: @escaping RandomPositionGenerator = { $0[Int.random(in: 0...$0.endIndex - 1)] }
+  ) {
     self.size = size
+    self.randomCellPositionGenerator = randomCellPositionGenerator
+    self.randomCellValueGenerator = randomCellValueGenerator
     for index in 0..<size * size {
       let key = IndexPath(item: index/size, section: index % size)
       positions[key] = .empty
@@ -33,33 +44,14 @@ class Board {
   
   @discardableResult
   func addCell() -> Cell {
-    let cell = Cell(emptyPositions: emptyPositions)
+    let cell = Cell(
+      emptyPositions: emptyPositions,
+      randomCellValueGenerator: randomCellValueGenerator,
+      randomCellPositionGenerator: randomCellPositionGenerator
+    )
     positions[cell.position] = .filled(cell: cell)
     cells.append(cell)
     return cell
-  }
-  
-  func findNextPosition(
-    for indexPath: IndexPath,
-    keyPath: WritableKeyPath<IndexPath, Int>,
-    nextPositionStepper: (inout Int, Int) -> Void,
-    steps: inout [IndexPath]
-  ) {
-    var nextPosition = indexPath
-    nextPositionStepper(&nextPosition[keyPath: keyPath], 1)
-    if nextPosition[keyPath: keyPath] < 0 || nextPosition[keyPath: keyPath] == size {
-      return
-    }
-    if positions[nextPosition] == .empty {
-      steps.append(nextPosition)
-      return findNextPosition(
-        for: nextPosition,
-        keyPath: keyPath,
-        nextPositionStepper: nextPositionStepper,
-        steps: &steps
-      )
-    }
-    steps.append(nextPosition)
   }
   
   func moveCells(
@@ -107,6 +99,29 @@ class Board {
     return movements
   }
   
+  private func findNextPosition(
+    for indexPath: IndexPath,
+    keyPath: WritableKeyPath<IndexPath, Int>,
+    nextPositionStepper: (inout Int, Int) -> Void,
+    steps: inout [IndexPath]
+  ) {
+    var nextPosition = indexPath
+    nextPositionStepper(&nextPosition[keyPath: keyPath], 1)
+    if nextPosition[keyPath: keyPath] < 0 || nextPosition[keyPath: keyPath] == size {
+      return
+    }
+    if positions[nextPosition] == .empty {
+      steps.append(nextPosition)
+      return findNextPosition(
+        for: nextPosition,
+        keyPath: keyPath,
+        nextPositionStepper: nextPositionStepper,
+        steps: &steps
+      )
+    }
+    steps.append(nextPosition)
+  }
+  
   private func mergeCell(
     _ cell: Cell,
     at position: IndexPath,
@@ -142,11 +157,15 @@ extension Board {
       "Cell value: \(value) at position: \(position)"
     }
     
-    init(emptyPositions: [IndexPath]) {
-      self.value = Int.random(in: 0..<10) == 1
+    init(
+      emptyPositions: [IndexPath],
+      randomCellValueGenerator: RandomValueGenerator,
+      randomCellPositionGenerator: RandomPositionGenerator
+    ) {
+      self.value = randomCellValueGenerator(0...9) == 1
         ? 4
         : 2
-      self.position = emptyPositions[Int.random(in: 0...emptyPositions.count - 1)]
+      self.position = randomCellPositionGenerator(emptyPositions)
     }
     
     func isMargePossible(with cell: Cell) -> Bool {

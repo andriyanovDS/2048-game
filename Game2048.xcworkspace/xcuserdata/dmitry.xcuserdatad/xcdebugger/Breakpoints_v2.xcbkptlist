@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3ABBA0C7-24D2-4593-A710-B0888A1D7EE6"
+            uuid = "662893E9-9ED5-4401-999D-71764C5DD864"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Game2048/Gameboard/Board.swift"
+            filePath = "Game2048Tests/CellTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "moveCells(positionKeyPath:compareBy:nextPositionStepper:)"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "testMerge()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -12,7 +12,6 @@
 		0A3D8DBC244F54A300801ABF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D8DBB244F54A300801ABF /* ViewController.swift */; };
 		0A3D8DC1244F54A400801ABF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3D8DC0244F54A400801ABF /* Assets.xcassets */; };
 		0A3D8DC4244F54A400801ABF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3D8DC2244F54A400801ABF /* LaunchScreen.storyboard */; };
-		0A3D8DCF244F54A400801ABF /* Game2048Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D8DCE244F54A400801ABF /* Game2048Tests.swift */; };
 		0A3D8DDA244F54A400801ABF /* Game2048UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D8DD9244F54A400801ABF /* Game2048UITests.swift */; };
 		0A3D8DEA244F55A800801ABF /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0A3D8DE9244F55A800801ABF /* Podfile */; };
 		0A3D8DED244F57CD00801ABF /* GameboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D8DEC244F57CD00801ABF /* GameboardViewController.swift */; };
@@ -21,6 +20,8 @@
 		0A3D8DF3244F62FF00801ABF /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D8DF2244F62FF00801ABF /* Board.swift */; };
 		0A3D8DF5244F7B7E00801ABF /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D8DF4244F7B7E00801ABF /* CellView.swift */; };
 		0A3D8DF72450A23600801ABF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0A3D8DF62450A23600801ABF /* .gitignore */; };
+		0A697D5D2450A99700E5F16A /* BoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A697D5C2450A99700E5F16A /* BoardTests.swift */; };
+		0A697D5F2450AC3800E5F16A /* CellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A697D5E2450AC3800E5F16A /* CellTests.swift */; };
 		9FE20B2FA17C14606478DDD5 /* Pods_Game2048.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D57193E9DAD4B3741434A7 /* Pods_Game2048.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +51,6 @@
 		0A3D8DC3244F54A400801ABF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A3D8DC5244F54A400801ABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A3D8DCA244F54A400801ABF /* Game2048Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Game2048Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A3D8DCE244F54A400801ABF /* Game2048Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game2048Tests.swift; sourceTree = "<group>"; };
 		0A3D8DD0244F54A400801ABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A3D8DD5244F54A400801ABF /* Game2048UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Game2048UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3D8DD9244F54A400801ABF /* Game2048UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game2048UITests.swift; sourceTree = "<group>"; };
@@ -62,6 +62,8 @@
 		0A3D8DF2244F62FF00801ABF /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		0A3D8DF4244F7B7E00801ABF /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		0A3D8DF62450A23600801ABF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0A697D5C2450A99700E5F16A /* BoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTests.swift; sourceTree = "<group>"; };
+		0A697D5E2450AC3800E5F16A /* CellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTests.swift; sourceTree = "<group>"; };
 		752506091630483995096D81 /* Pods-Game2048.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game2048.release.xcconfig"; path = "Target Support Files/Pods-Game2048/Pods-Game2048.release.xcconfig"; sourceTree = "<group>"; };
 		B9D57193E9DAD4B3741434A7 /* Pods_Game2048.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Game2048.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6BB6F0583BE73EEBCF72DE4 /* Pods-Game2048.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game2048.debug.xcconfig"; path = "Target Support Files/Pods-Game2048/Pods-Game2048.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,7 +136,8 @@
 		0A3D8DCD244F54A400801ABF /* Game2048Tests */ = {
 			isa = PBXGroup;
 			children = (
-				0A3D8DCE244F54A400801ABF /* Game2048Tests.swift */,
+				0A697D5C2450A99700E5F16A /* BoardTests.swift */,
+				0A697D5E2450AC3800E5F16A /* CellTests.swift */,
 				0A3D8DD0244F54A400801ABF /* Info.plist */,
 			);
 			path = Game2048Tests;
@@ -369,7 +372,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A3D8DCF244F54A400801ABF /* Game2048Tests.swift in Sources */,
+				0A697D5D2450A99700E5F16A /* BoardTests.swift in Sources */,
+				0A697D5F2450AC3800E5F16A /* CellTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
