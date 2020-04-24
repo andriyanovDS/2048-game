@@ -34,6 +34,35 @@ class BoardTests: XCTestCase {
     XCTAssertEqual(filledPositionsCount(inside: board), initialCellCount + 1)
   }
   
+  func testRestart() {
+    let board = Board(size: 4)
+    let initialCellCount = board.cells.count
+    board.addCell()
+    board.restart()
+    
+    XCTAssertEqual(board.cells.count, initialCellCount)
+    XCTAssertEqual(filledPositionsCount(inside: board), initialCellCount)
+  }
+  
+  func testUndoStep() {
+    let board = Board(size: 4)
+    let initialPositions = board.positions
+    _ = board.moveCells(positionKeyPath: \.section, compareBy: <, nextPositionStepper: -=)
+    board.addCell()
+    _ = board.moveCells(positionKeyPath: \.section, compareBy: <, nextPositionStepper: -=)
+    board.addCell()
+    let (firstRevertedMovements, firstLastCell) = board.undoStep()
+    let (secondRevertedMovements, secondLastCell) = board.undoStep()
+    
+    XCTAssertNotNil(firstRevertedMovements)
+    XCTAssertNotNil(secondRevertedMovements)
+    XCTAssertNotNil(firstLastCell)
+    XCTAssertNotNil(secondLastCell)
+    XCTAssertEqual(board.cells.count, 2)
+    XCTAssertEqual(filledPositionsCount(inside: board), 2)
+    XCTAssertEqual(board.positions, initialPositions)
+  }
+  
   func testMergeTwoInRow() {
     
     // Generate initial cells with value 4 and positions at (0, 1) and (0, 2)

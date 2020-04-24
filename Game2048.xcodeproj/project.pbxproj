@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A03C9BC2452285100384815 /* GameboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A03C9BB2452285100384815 /* GameboardRouter.swift */; };
+		0A03C9BE24522C7000384815 /* GameboardModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A03C9BD24522C7000384815 /* GameboardModule.swift */; };
 		0A3D8DB8244F54A300801ABF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D8DB7244F54A300801ABF /* AppDelegate.swift */; };
 		0A3D8DBA244F54A300801ABF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D8DB9244F54A300801ABF /* SceneDelegate.swift */; };
 		0A3D8DBC244F54A300801ABF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D8DBB244F54A300801ABF /* ViewController.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A03C9BB2452285100384815 /* GameboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardRouter.swift; sourceTree = "<group>"; };
+		0A03C9BD24522C7000384815 /* GameboardModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardModule.swift; sourceTree = "<group>"; };
 		0A3D8DB4244F54A300801ABF /* Game2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3D8DB7244F54A300801ABF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A3D8DB9244F54A300801ABF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,10 +160,12 @@
 			isa = PBXGroup;
 			children = (
 				0A3D8DEC244F57CD00801ABF /* GameboardViewController.swift */,
+				0A03C9BB2452285100384815 /* GameboardRouter.swift */,
 				0A3D8DF0244F5E5000801ABF /* GameboardViewModel.swift */,
 				0A3D8DF2244F62FF00801ABF /* Board.swift */,
 				0A3D8DEE244F5E4100801ABF /* GameboardView.swift */,
 				0A3D8DF4244F7B7E00801ABF /* CellView.swift */,
+				0A03C9BD24522C7000384815 /* GameboardModule.swift */,
 			);
 			path = Gameboard;
 			sourceTree = "<group>";
@@ -359,7 +365,9 @@
 			files = (
 				0A3D8DBC244F54A300801ABF /* ViewController.swift in Sources */,
 				0A3D8DED244F57CD00801ABF /* GameboardViewController.swift in Sources */,
+				0A03C9BE24522C7000384815 /* GameboardModule.swift in Sources */,
 				0A3D8DF3244F62FF00801ABF /* Board.swift in Sources */,
+				0A03C9BC2452285100384815 /* GameboardRouter.swift in Sources */,
 				0A3D8DEF244F5E4100801ABF /* GameboardView.swift in Sources */,
 				0A3D8DF5244F7B7E00801ABF /* CellView.swift in Sources */,
 				0A3D8DB8244F54A300801ABF /* AppDelegate.swift in Sources */,

@@ -21,9 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     let window = UIWindow(frame: UIScreen.main.bounds)
     window.windowScene = scene
     self.window = window
-    let viewModel = GameboardViewModelImpl(size: 4)
-    let rootViewController = GameboardViewController(viewModel: viewModel)
-    window.rootViewController = rootViewController
+    
+    window.rootViewController = GameboardModule.buildDefault(withSize: 4)
     window.makeKeyAndVisible()
   }
 

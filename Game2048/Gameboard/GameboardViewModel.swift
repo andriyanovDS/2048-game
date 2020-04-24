@@ -22,6 +22,21 @@ class GameboardViewModelImpl: GameboardViewModel {
     self.board = Board(size: size)
   }
   
+  func undo() {
+    let (revertedMovements, lastCellPosition) = board.undoStep()
+    guard let movements = revertedMovements, let cellPosition = lastCellPosition else {
+      return
+    }
+    delegate?.viewModel(self, didUndoStepWithMovements: movements, andRemoveCellAtPosition: cellPosition)
+  }
+  
+  func restart() {
+    board.restart()
+    board.cells.forEach {
+      delegate?.viewModel(self, insertCell: $0)
+    }
+  }
+  
   func moveRight() {
     moveCells(moveAction: board.moveCells(
       positionKeyPath: \.item,
@@ -66,13 +81,10 @@ class GameboardViewModelImpl: GameboardViewModel {
   }
   
   private func moveCells(moveAction: @autoclosure () -> [Movement]) {
-    guard let delegate = self.delegate else { return }
+    guard !isGameCompleted, let delegate = self.delegate else { return }
     let movements = moveAction()
-    updateScore(after: movements)
-    delegate.viewModel(self, cellPositionsDidChangeWithMovements: movements)
-    let cell = board.addCell()
-    delegate.viewModel(self, insertCell: cell)
-    if board.cells.count == size * size {
+    
+    if board.cells.count == size * size && movements.isEmpty {
       delegate.onGameComplete(withResult: .fail)
       return
     }
@@ -80,11 +92,16 @@ class GameboardViewModelImpl: GameboardViewModel {
       isGameCompleted = true
       delegate.onGameComplete(withResult: .win)
     }
+    
+    updateScore(after: movements)
+    delegate.viewModel(self, cellPositionsDidChangeWithMovements: movements)
+    let cell = board.addCell()
+    delegate.viewModel(self, insertCell: cell)
   }
   
   private func updateScore(after movements: [Movement]) {
     score += movements
-      .filter { $0.isDestructive }
+      .filter { $0 is DestructiveMovement }
       .reduce(0, { result, movement -> Int in
         let cell = board.positions[movement.to]
         switch cell {
@@ -112,6 +129,8 @@ protocol GameboardViewModel: class {
   var score: Int { get }
   var delegate: GameboardViewModelDelegate? { get set }
   
+  func undo()
+  func restart()
   func moveUp()
   func moveDown()
   func moveLeft()
@@ -123,5 +142,10 @@ protocol GameboardViewModelDelegate: class {
   func onGameComplete(withResult: GameResult)
   func viewModel(_: GameboardViewModel, insertCell: Board.Cell)
   func viewModel(_: GameboardViewModel, cellPositionsDidChangeWithMovements: [Movement])
+  func viewModel(
+    _: GameboardViewModel,
+    didUndoStepWithMovements: ReversedCollection<[Movement]>,
+    andRemoveCellAtPosition: IndexPath
+  )
 }
 

@@ -15,9 +15,11 @@ class GameboardView: UIView {
   }
   var boardStackView = UIStackView()
   let boardView = UIView()
-  var cellViews: [IndexPath: [CellView]] = [:]
   let scoreValueLabel = UILabel()
+  let undoButton = UIButton()
+  let restartButton = UIButton()
   private let scoreTitleLabel = UILabel()
+  private var cellViews: [IndexPath: [CellView]] = [:]
   
   init() {
     super.init(frame: CGRect.zero)
@@ -32,6 +34,25 @@ class GameboardView: UIView {
     static let boardWidth: CGFloat = UIScreen.main.bounds.width - 40
   }
   
+  func clearCells(completion: @escaping () -> Void) {
+    scoreValueLabel.text = "0"
+    let cells = cellViews.values.flatMap { $0 }
+    UIView.animate(
+      withDuration: 0.2,
+      animations: {
+        cells.forEach { cell in
+          cell.alpha = 0
+          cell.transform = cell.transform.scaledBy(x: 0.5, y: 0.5)
+        }
+      },
+      completion: {[weak self] _ in
+        cells.forEach { $0.removeFromSuperview() }
+        self?.cellViews = [:]
+        completion()
+      }
+    )
+  }
+  
   func view(at indexPath: IndexPath) -> UIView {
     let rowView = boardStackView.arrangedSubviews[indexPath.section]
     guard let rowStackView = rowView as? UIStackView else {
@@ -40,10 +61,10 @@ class GameboardView: UIView {
     return rowStackView.arrangedSubviews[indexPath.item]
   }
   
-  func insertCell(withValue value: Int, at indexPath: IndexPath) {
+  @discardableResult
+  func insertCell(withValue value: Int, at indexPath: IndexPath) -> CellView {
     let cell = CellView()
     cell.updateValue(value)
-    cell.alpha = 0.5
     cellViews[indexPath] = [cell]
     let positionView = view(at: IndexPath(item: 0, section: 0))
     boardView.sv(cell)
@@ -51,14 +72,20 @@ class GameboardView: UIView {
     cell
       .width(positionView.bounds.width)
       .height(positionView.bounds.height)
-    let transformTranslate = CGAffineTransform.identity
-      .translatedBy(x: viewOrigin.x + 5, y: viewOrigin.y + 5)
-    let transform = transformTranslate
+    cell.transform = CGAffineTransform(translationX: viewOrigin.x + 5, y: viewOrigin.y + 5)
+    return cell
+  }
+  
+  func insertCellWithAnimation(value: Int, at indexPath: IndexPath) {
+    let cellView = insertCell(withValue: value, at: indexPath)
+    let currentTransform = cellView.transform
+    let transform = currentTransform
       .scaledBy(x: 0.5, y: 0.5)
-    cell.transform = transform
+    cellView.transform = transform
+    cellView.alpha = 0.5
     UIView.animate(withDuration: 0.2, animations: {
-      cell.alpha = 1
-      cell.transform = transformTranslate
+      cellView.alpha = 1
+      cellView.transform = currentTransform
     })
   }
   
@@ -84,7 +111,7 @@ class GameboardView: UIView {
   
   func removeCell(at indexPath: IndexPath) {
     guard var cells = cellViews[indexPath] else { return }
-    let lastCell = cells.remove(at: cells.index(before: cells.endIndex - 1))
+    guard let lastCell = cells.popLast() else { return }
     lastCell.removeFromSuperview()
     cellViews[indexPath] = cells
   }
@@ -124,19 +151,31 @@ class GameboardView: UIView {
     boardView.backgroundColor = .systemGray2
     boardView.layer.cornerRadius = 10
     
-    scoreTitleLabel.textColor = .label
+    [scoreTitleLabel, scoreValueLabel]
+      .forEach { v in
+        v.textColor = .label
+        v.font = .systemFont(ofSize: 40)
+      }
     scoreTitleLabel.text = "Score:"
-    scoreTitleLabel.font = .systemFont(ofSize: 40)
-    
-    scoreValueLabel.textColor = .label
     scoreValueLabel.text = "0"
-    scoreValueLabel.font = .systemFont(ofSize: 40)
     
-    sv([scoreTitleLabel, scoreValueLabel, boardView])
+    [(undoButton, "gobackward"), (restartButton, "repeat")]
+      .forEach { (button, iconName) in
+        let imageConfig = UIImage.SymbolConfiguration(pointSize: 30)
+        let undoImage = UIImage(systemName: iconName, withConfiguration: imageConfig)
+        button.setImage(undoImage, for: .normal)
+        button.tintColor = .systemGray2
+      }
+    
+    sv([scoreTitleLabel, scoreValueLabel, boardView, restartButton, undoButton])
     scoreTitleLabel.left(20)
     scoreTitleLabel.Bottom == boardView.Top - 40
     scoreValueLabel.CenterY == scoreTitleLabel.CenterY
     scoreValueLabel.Left == scoreTitleLabel.Right + 5
+    undoButton.CenterY == scoreValueLabel.CenterY
+    restartButton.CenterY == undoButton.CenterY
+    restartButton.right(20)
+    undoButton.Right == restartButton.Left - 20
     boardView
       .size(Constants.boardWidth)
       .centerInContainer()

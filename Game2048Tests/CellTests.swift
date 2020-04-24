@@ -73,4 +73,33 @@ class CellTests: XCTestCase {
     cell.merge(with: mergeCell)
     XCTAssertEqual(cell.value, 4)
   }
+  
+  func testUndoMerge() {
+    let cell = Board.Cell(
+      emptyPositions: [IndexPath(item: 1, section: 1)],
+      randomCellValueGenerator: { _ in 2 },
+      randomCellPositionGenerator: fakeRandomPositionGenerator
+    )
+    let mergeCell = Board.Cell(
+      emptyPositions: [IndexPath(item: 1, section: 0)],
+      randomCellValueGenerator: { _ in 2 },
+      randomCellPositionGenerator: fakeRandomPositionGenerator
+    )
+    
+    cell.merge(with: mergeCell)
+    cell.undoMerge()
+    
+    XCTAssertEqual(cell.value, 2)
+  }
+  
+  func testCopy() {
+    let cell = Board.Cell(
+      emptyPositions: [IndexPath(item: 1, section: 1)],
+      randomCellValueGenerator: { _ in 2 },
+      randomCellPositionGenerator: fakeRandomPositionGenerator
+    )
+    let copiedCell = cell.copy()
+    
+    XCTAssertEqual(cell, copiedCell)
+  }
 }

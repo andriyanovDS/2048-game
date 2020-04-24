@@ -20,6 +20,7 @@ class Board {
       positions[key] == .empty
     }
   }
+  private var stepsHistory: [[Movement]] = []
   private let randomCellValueGenerator: RandomValueGenerator
   private let randomCellPositionGenerator: RandomPositionGenerator
   
@@ -40,6 +41,47 @@ class Board {
       positions[key] = .empty
     }
     Array(0..<Constants.initialCellCount).forEach { _ in addCell() }
+  }
+  
+  func restart() {
+    positions.keys.forEach { positions[$0] = .empty }
+    cells.removeAll()
+    stepsHistory.removeAll()
+    Array(0..<Constants.initialCellCount).forEach { _ in addCell() }
+  }
+  
+  func undoStep() -> (revertedMovements: ReversedCollection<[Movement]>?, lastInsertedCellPosition: IndexPath?) {    
+    guard let movements = stepsHistory.popLast() else {
+      return (nil, nil)
+    }
+    
+    let lastCell = cells.popLast()
+    let reversedMovements = movements.reversed()
+    
+    if let cell = lastCell {
+      positions[cell.position] = .empty
+    }
+    
+    reversedMovements.forEach { movement in
+      let cell = positions[movement.to]
+      
+      if movement is DefaultMovement {
+        positions[movement.from] = cell
+        positions[movement.to] = .empty
+      }
+      switch cell {
+      case .filled(let cellAtPosition) where movement is DestructiveMovement:
+        cellAtPosition.undoMerge()
+        let removedCell = cellAtPosition.copy()
+        removedCell.position = movement.from
+        cells.insert(removedCell, at: (movement as! DestructiveMovement).removedAt)
+        positions[movement.from] = .filled(cell: removedCell)
+      case .filled(let cellAtPosition) where movement is DefaultMovement:
+        cellAtPosition.position = movement.from
+      default: break
+      }
+    }
+    return (reversedMovements, lastCell?.position)
   }
   
   @discardableResult
@@ -79,22 +121,25 @@ class Board {
       switch cellAtNextPosition {
       case .filled(let nextCell):
         if nextCell.isMargePossible(with: cell) && !mergedCells.contains(nextCell) {
-          mergeCell(cell, at: currentPosition, withCell: nextCell)
+          let removedAt = mergeCell(cell, at: currentPosition, withCell: nextCell)
           mergedCells.insert(nextCell)
-          movements.append(Movement(from: currentPosition, to: nextPosition, isDestructive: true))
+          movements.append(DestructiveMovement(from: currentPosition, to: nextPosition, removedAt: removedAt))
           continue
         }
         if steps.count < 2 { continue }
         let stepDownPosition = steps[steps.index(before: steps.endIndex - 1)]
         if positions[stepDownPosition] == .empty {
           moveCell(cell, from: currentPosition, to: stepDownPosition)
-          movements.append(Movement(from: currentPosition, to: stepDownPosition, isDestructive: false))
+          movements.append(DefaultMovement(from: currentPosition, to: stepDownPosition))
         }
       case .empty:
         moveCell(cell, from: currentPosition, to: nextPosition)
-        movements.append(Movement(from: currentPosition, to: nextPosition, isDestructive: false))
+        movements.append(DefaultMovement(from: currentPosition, to: nextPosition))
       default: continue
       }
+    }
+    if !(cells.count == size*size && movements.isEmpty) {
+      stepsHistory.append(movements)
     }
     return movements
   }
@@ -126,10 +171,12 @@ class Board {
     _ cell: Cell,
     at position: IndexPath,
     withCell mergedCell: Cell
-  ) {
+  ) -> Int {
     mergedCell.merge(with: cell)
     positions[position] = .empty
-    cells.removeAll(where: { $0 == cell })
+    let index = cells.firstIndex(of: cell)!
+    cells.remove(at: index)
+    return index
   }
   
   private func moveCell(
@@ -143,15 +190,25 @@ class Board {
   }
 }
 
-struct Movement {
+protocol Movement {
+  var from: IndexPath { get }
+  var to: IndexPath { get }
+}
+
+struct DefaultMovement: Movement, Equatable {
   let from: IndexPath
   let to: IndexPath
-  let isDestructive: Bool
+}
+
+struct DestructiveMovement: Movement, Equatable {
+  let from: IndexPath
+  let to: IndexPath
+  let removedAt: Int
 }
 
 extension Board {
   class Cell: Equatable, Hashable, CustomDebugStringConvertible {
-    var value: Int
+    private(set) var value: Int
     var position: IndexPath
     var debugDescription: String {
       "Cell value: \(value) at position: \(position)"
@@ -166,6 +223,15 @@ extension Board {
         ? 4
         : 2
       self.position = randomCellPositionGenerator(emptyPositions)
+    }
+    
+    private init(position: IndexPath, value: Int) {
+      self.value = value
+      self.position = position
+    }
+    
+    func undoMerge() {
+      value /= 2
     }
     
     func isMargePossible(with cell: Cell) -> Bool {
@@ -183,6 +249,10 @@ extension Board {
     func hash(into hasher: inout Hasher) {
       hasher.combine(value)
       hasher.combine(position)
+    }
+    
+    func copy() -> Cell {
+      Cell(position: position, value: value)
     }
   }
   
