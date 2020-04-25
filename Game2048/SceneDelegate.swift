@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     window.windowScene = scene
     self.window = window
     
-    window.rootViewController = GameboardModule.buildDefault(withSize: 4)
+    window.rootViewController = HomeModule.buildDefault()
     window.makeKeyAndVisible()
   }
 

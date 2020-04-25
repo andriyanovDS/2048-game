@@ -12,8 +12,20 @@ import Foundation
 class GameboardModule {
   
   static func buildDefault(withSize size: Int) -> UIViewController {
-    let viewModel = GameboardViewModelImpl(size: size)
+    let board = Board(size: size)
+    let viewModel = GameboardOfflineViewModelImpl(board: board)
     let router = GameboardRouter()
-    return GameboardViewController(viewModel: viewModel, router: router)
+    let view = GameboardOfflineView()
+    let configurator = GameboardViewConfigurator(viewModel: viewModel, view: view)
+    let viewController = GameboardOfflineViewController(
+      viewModel: viewModel,
+      router: router,
+      view: view,
+      configurator: configurator
+    )
+    viewModel.delegate = configurator
+    configurator.delegate = viewController
+    view.boardView.dataSource = configurator
+    return viewController
   }
 }

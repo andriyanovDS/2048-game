@@ -16,14 +16,38 @@
 		0A3D8DC4244F54A400801ABF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3D8DC2244F54A400801ABF /* LaunchScreen.storyboard */; };
 		0A3D8DDA244F54A400801ABF /* Game2048UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D8DD9244F54A400801ABF /* Game2048UITests.swift */; };
 		0A3D8DEA244F55A800801ABF /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0A3D8DE9244F55A800801ABF /* Podfile */; };
-		0A3D8DED244F57CD00801ABF /* GameboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D8DEC244F57CD00801ABF /* GameboardViewController.swift */; };
-		0A3D8DEF244F5E4100801ABF /* GameboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D8DEE244F5E4100801ABF /* GameboardView.swift */; };
-		0A3D8DF1244F5E5000801ABF /* GameboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D8DF0244F5E5000801ABF /* GameboardViewModel.swift */; };
+		0A3D8DED244F57CD00801ABF /* GameboardOfflineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D8DEC244F57CD00801ABF /* GameboardOfflineViewController.swift */; };
+		0A3D8DEF244F5E4100801ABF /* GameboardOfflineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D8DEE244F5E4100801ABF /* GameboardOfflineView.swift */; };
+		0A3D8DF1244F5E5000801ABF /* GameboardOfflineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D8DF0244F5E5000801ABF /* GameboardOfflineViewModel.swift */; };
 		0A3D8DF3244F62FF00801ABF /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D8DF2244F62FF00801ABF /* Board.swift */; };
 		0A3D8DF5244F7B7E00801ABF /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D8DF4244F7B7E00801ABF /* CellView.swift */; };
 		0A3D8DF72450A23600801ABF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0A3D8DF62450A23600801ABF /* .gitignore */; };
+		0A4FBB8924535FA800726CAA /* WebSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4FBB8824535FA800726CAA /* WebSocketClient.swift */; };
+		0A4FBB8B245604EC00726CAA /* GameboardViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4FBB8A245604EC00726CAA /* GameboardViewConfigurator.swift */; };
+		0A4FBB8D2456091800726CAA /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4FBB8C2456091800726CAA /* BoardView.swift */; };
+		0A56C32924583A3100464B74 /* GameboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A56C32824583A3100464B74 /* GameboardViewModel.swift */; };
+		0A56C32B24583AB000464B74 /* GameboardOnlineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A56C32A24583AB000464B74 /* GameboardOnlineViewModel.swift */; };
 		0A697D5D2450A99700E5F16A /* BoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A697D5C2450A99700E5F16A /* BoardTests.swift */; };
 		0A697D5F2450AC3800E5F16A /* CellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A697D5E2450AC3800E5F16A /* CellTests.swift */; };
+		74674C1C2454A86A003955B7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74674C1B2454A86A003955B7 /* HomeViewController.swift */; };
+		74674C1E2454A876003955B7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74674C1D2454A876003955B7 /* HomeViewModel.swift */; };
+		74674C202454A87F003955B7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74674C1F2454A87F003955B7 /* HomeView.swift */; };
+		74674C222454A8D2003955B7 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74674C212454A8D2003955B7 /* HomeRouter.swift */; };
+		74674C252454A9B3003955B7 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74674C242454A9B3003955B7 /* APIService.swift */; };
+		74674C272454AA57003955B7 /* environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74674C262454AA57003955B7 /* environment.swift */; };
+		74674C292454B09B003955B7 /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74674C282454B09B003955B7 /* HomeModule.swift */; };
+		74674C2B2454B206003955B7 /* ButtonScaleOnPress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74674C2A2454B206003955B7 /* ButtonScaleOnPress.swift */; };
+		74674C2E2454B315003955B7 /* RoomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74674C2D2454B315003955B7 /* RoomListViewController.swift */; };
+		74674C302454B31E003955B7 /* RoomListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74674C2F2454B31E003955B7 /* RoomListView.swift */; };
+		74674C322454B32A003955B7 /* RoomListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74674C312454B32A003955B7 /* RoomListViewModel.swift */; };
+		74674C342454B334003955B7 /* RoomListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74674C332454B334003955B7 /* RoomListRouter.swift */; };
+		74674C362454B33E003955B7 /* RoomListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74674C352454B33E003955B7 /* RoomListModule.swift */; };
+		74674C382454E276003955B7 /* RoomCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74674C372454E276003955B7 /* RoomCellView.swift */; };
+		74674C3A24559D60003955B7 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74674C3924559D60003955B7 /* Storage.swift */; };
+		74674C3D2455A7AC003955B7 /* GameboardOnlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74674C3C2455A7AC003955B7 /* GameboardOnlineViewController.swift */; };
+		74674C3F2455A7CF003955B7 /* GameboardNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74674C3E2455A7CF003955B7 /* GameboardNetworkClient.swift */; };
+		74674C412455A7D6003955B7 /* GameboardOnlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74674C402455A7D6003955B7 /* GameboardOnlineView.swift */; };
+		74674C432455CEBC003955B7 /* GameboardOnlineModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74674C422455CEBC003955B7 /* GameboardOnlineModule.swift */; };
 		9FE20B2FA17C14606478DDD5 /* Pods_Game2048.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D57193E9DAD4B3741434A7 /* Pods_Game2048.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,14 +84,38 @@
 		0A3D8DD9244F54A400801ABF /* Game2048UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game2048UITests.swift; sourceTree = "<group>"; };
 		0A3D8DDB244F54A400801ABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A3D8DE9244F55A800801ABF /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		0A3D8DEC244F57CD00801ABF /* GameboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardViewController.swift; sourceTree = "<group>"; };
-		0A3D8DEE244F5E4100801ABF /* GameboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardView.swift; sourceTree = "<group>"; };
-		0A3D8DF0244F5E5000801ABF /* GameboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardViewModel.swift; sourceTree = "<group>"; };
+		0A3D8DEC244F57CD00801ABF /* GameboardOfflineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardOfflineViewController.swift; sourceTree = "<group>"; };
+		0A3D8DEE244F5E4100801ABF /* GameboardOfflineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardOfflineView.swift; sourceTree = "<group>"; };
+		0A3D8DF0244F5E5000801ABF /* GameboardOfflineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardOfflineViewModel.swift; sourceTree = "<group>"; };
 		0A3D8DF2244F62FF00801ABF /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		0A3D8DF4244F7B7E00801ABF /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		0A3D8DF62450A23600801ABF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0A4FBB8824535FA800726CAA /* WebSocketClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketClient.swift; sourceTree = "<group>"; };
+		0A4FBB8A245604EC00726CAA /* GameboardViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardViewConfigurator.swift; sourceTree = "<group>"; };
+		0A4FBB8C2456091800726CAA /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		0A56C32824583A3100464B74 /* GameboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardViewModel.swift; sourceTree = "<group>"; };
+		0A56C32A24583AB000464B74 /* GameboardOnlineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardOnlineViewModel.swift; sourceTree = "<group>"; };
 		0A697D5C2450A99700E5F16A /* BoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTests.swift; sourceTree = "<group>"; };
 		0A697D5E2450AC3800E5F16A /* CellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTests.swift; sourceTree = "<group>"; };
+		74674C1B2454A86A003955B7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		74674C1D2454A876003955B7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		74674C1F2454A87F003955B7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		74674C212454A8D2003955B7 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		74674C242454A9B3003955B7 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		74674C262454AA57003955B7 /* environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = environment.swift; sourceTree = "<group>"; };
+		74674C282454B09B003955B7 /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
+		74674C2A2454B206003955B7 /* ButtonScaleOnPress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonScaleOnPress.swift; sourceTree = "<group>"; };
+		74674C2D2454B315003955B7 /* RoomListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListViewController.swift; sourceTree = "<group>"; };
+		74674C2F2454B31E003955B7 /* RoomListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListView.swift; sourceTree = "<group>"; };
+		74674C312454B32A003955B7 /* RoomListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListViewModel.swift; sourceTree = "<group>"; };
+		74674C332454B334003955B7 /* RoomListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListRouter.swift; sourceTree = "<group>"; };
+		74674C352454B33E003955B7 /* RoomListModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListModule.swift; sourceTree = "<group>"; };
+		74674C372454E276003955B7 /* RoomCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCellView.swift; sourceTree = "<group>"; };
+		74674C3924559D60003955B7 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		74674C3C2455A7AC003955B7 /* GameboardOnlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardOnlineViewController.swift; sourceTree = "<group>"; };
+		74674C3E2455A7CF003955B7 /* GameboardNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardNetworkClient.swift; sourceTree = "<group>"; };
+		74674C402455A7D6003955B7 /* GameboardOnlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardOnlineView.swift; sourceTree = "<group>"; };
+		74674C422455CEBC003955B7 /* GameboardOnlineModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardOnlineModule.swift; sourceTree = "<group>"; };
 		752506091630483995096D81 /* Pods-Game2048.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game2048.release.xcconfig"; path = "Target Support Files/Pods-Game2048/Pods-Game2048.release.xcconfig"; sourceTree = "<group>"; };
 		B9D57193E9DAD4B3741434A7 /* Pods_Game2048.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Game2048.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6BB6F0583BE73EEBCF72DE4 /* Pods-Game2048.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game2048.debug.xcconfig"; path = "Target Support Files/Pods-Game2048/Pods-Game2048.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,10 +174,17 @@
 		0A3D8DB6244F54A300801ABF /* Game2048 */ = {
 			isa = PBXGroup;
 			children = (
+				74674C2C2454B302003955B7 /* RoomList */,
+				74674C232454A996003955B7 /* APIService */,
+				74674C1A2454A82B003955B7 /* Home */,
 				0A3D8DEB244F56CE00801ABF /* Gameboard */,
-				0A3D8DB7244F54A300801ABF /* AppDelegate.swift */,
+				74674C3B2455A773003955B7 /* GameboardOnline */,
 				0A3D8DB9244F54A300801ABF /* SceneDelegate.swift */,
+				0A3D8DB7244F54A300801ABF /* AppDelegate.swift */,
 				0A3D8DBB244F54A300801ABF /* ViewController.swift */,
+				74674C3924559D60003955B7 /* Storage.swift */,
+				0A4FBB8824535FA800726CAA /* WebSocketClient.swift */,
+				74674C262454AA57003955B7 /* environment.swift */,
 				0A3D8DC0244F54A400801ABF /* Assets.xcassets */,
 				0A3D8DC2244F54A400801ABF /* LaunchScreen.storyboard */,
 				0A3D8DC5244F54A400801ABF /* Info.plist */,
@@ -159,15 +214,64 @@
 		0A3D8DEB244F56CE00801ABF /* Gameboard */ = {
 			isa = PBXGroup;
 			children = (
-				0A3D8DEC244F57CD00801ABF /* GameboardViewController.swift */,
+				0A3D8DEC244F57CD00801ABF /* GameboardOfflineViewController.swift */,
+				0A4FBB8A245604EC00726CAA /* GameboardViewConfigurator.swift */,
+				0A3D8DF0244F5E5000801ABF /* GameboardOfflineViewModel.swift */,
+				0A56C32824583A3100464B74 /* GameboardViewModel.swift */,
 				0A03C9BB2452285100384815 /* GameboardRouter.swift */,
-				0A3D8DF0244F5E5000801ABF /* GameboardViewModel.swift */,
 				0A3D8DF2244F62FF00801ABF /* Board.swift */,
-				0A3D8DEE244F5E4100801ABF /* GameboardView.swift */,
+				0A3D8DEE244F5E4100801ABF /* GameboardOfflineView.swift */,
+				0A4FBB8C2456091800726CAA /* BoardView.swift */,
 				0A3D8DF4244F7B7E00801ABF /* CellView.swift */,
 				0A03C9BD24522C7000384815 /* GameboardModule.swift */,
 			);
 			path = Gameboard;
+			sourceTree = "<group>";
+		};
+		74674C1A2454A82B003955B7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				74674C1B2454A86A003955B7 /* HomeViewController.swift */,
+				74674C1D2454A876003955B7 /* HomeViewModel.swift */,
+				74674C1F2454A87F003955B7 /* HomeView.swift */,
+				74674C212454A8D2003955B7 /* HomeRouter.swift */,
+				74674C282454B09B003955B7 /* HomeModule.swift */,
+				74674C2A2454B206003955B7 /* ButtonScaleOnPress.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		74674C232454A996003955B7 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				74674C242454A9B3003955B7 /* APIService.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		74674C2C2454B302003955B7 /* RoomList */ = {
+			isa = PBXGroup;
+			children = (
+				74674C2D2454B315003955B7 /* RoomListViewController.swift */,
+				74674C312454B32A003955B7 /* RoomListViewModel.swift */,
+				74674C2F2454B31E003955B7 /* RoomListView.swift */,
+				74674C332454B334003955B7 /* RoomListRouter.swift */,
+				74674C372454E276003955B7 /* RoomCellView.swift */,
+				74674C352454B33E003955B7 /* RoomListModule.swift */,
+			);
+			path = RoomList;
+			sourceTree = "<group>";
+		};
+		74674C3B2455A773003955B7 /* GameboardOnline */ = {
+			isa = PBXGroup;
+			children = (
+				74674C3C2455A7AC003955B7 /* GameboardOnlineViewController.swift */,
+				0A56C32A24583AB000464B74 /* GameboardOnlineViewModel.swift */,
+				74674C3E2455A7CF003955B7 /* GameboardNetworkClient.swift */,
+				74674C402455A7D6003955B7 /* GameboardOnlineView.swift */,
+				74674C422455CEBC003955B7 /* GameboardOnlineModule.swift */,
+			);
+			path = GameboardOnline;
 			sourceTree = "<group>";
 		};
 		899A4104C02F81CF66C26327 /* Pods */ = {
@@ -363,16 +467,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A56C32B24583AB000464B74 /* GameboardOnlineViewModel.swift in Sources */,
+				74674C412455A7D6003955B7 /* GameboardOnlineView.swift in Sources */,
 				0A3D8DBC244F54A300801ABF /* ViewController.swift in Sources */,
-				0A3D8DED244F57CD00801ABF /* GameboardViewController.swift in Sources */,
+				74674C202454A87F003955B7 /* HomeView.swift in Sources */,
+				0A3D8DED244F57CD00801ABF /* GameboardOfflineViewController.swift in Sources */,
 				0A03C9BE24522C7000384815 /* GameboardModule.swift in Sources */,
+				0A56C32924583A3100464B74 /* GameboardViewModel.swift in Sources */,
+				74674C222454A8D2003955B7 /* HomeRouter.swift in Sources */,
 				0A3D8DF3244F62FF00801ABF /* Board.swift in Sources */,
+				74674C382454E276003955B7 /* RoomCellView.swift in Sources */,
+				74674C292454B09B003955B7 /* HomeModule.swift in Sources */,
+				74674C432455CEBC003955B7 /* GameboardOnlineModule.swift in Sources */,
+				74674C2E2454B315003955B7 /* RoomListViewController.swift in Sources */,
+				0A4FBB8B245604EC00726CAA /* GameboardViewConfigurator.swift in Sources */,
+				74674C272454AA57003955B7 /* environment.swift in Sources */,
+				0A4FBB8D2456091800726CAA /* BoardView.swift in Sources */,
+				74674C252454A9B3003955B7 /* APIService.swift in Sources */,
+				0A4FBB8924535FA800726CAA /* WebSocketClient.swift in Sources */,
+				74674C322454B32A003955B7 /* RoomListViewModel.swift in Sources */,
 				0A03C9BC2452285100384815 /* GameboardRouter.swift in Sources */,
-				0A3D8DEF244F5E4100801ABF /* GameboardView.swift in Sources */,
+				74674C3D2455A7AC003955B7 /* GameboardOnlineViewController.swift in Sources */,
+				74674C342454B334003955B7 /* RoomListRouter.swift in Sources */,
+				74674C3F2455A7CF003955B7 /* GameboardNetworkClient.swift in Sources */,
+				0A3D8DEF244F5E4100801ABF /* GameboardOfflineView.swift in Sources */,
 				0A3D8DF5244F7B7E00801ABF /* CellView.swift in Sources */,
+				74674C2B2454B206003955B7 /* ButtonScaleOnPress.swift in Sources */,
+				74674C302454B31E003955B7 /* RoomListView.swift in Sources */,
+				74674C1E2454A876003955B7 /* HomeViewModel.swift in Sources */,
 				0A3D8DB8244F54A300801ABF /* AppDelegate.swift in Sources */,
 				0A3D8DBA244F54A300801ABF /* SceneDelegate.swift in Sources */,
-				0A3D8DF1244F5E5000801ABF /* GameboardViewModel.swift in Sources */,
+				0A3D8DF1244F5E5000801ABF /* GameboardOfflineViewModel.swift in Sources */,
+				74674C362454B33E003955B7 /* RoomListModule.swift in Sources */,
+				74674C1C2454A86A003955B7 /* HomeViewController.swift in Sources */,
+				74674C3A24559D60003955B7 /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
