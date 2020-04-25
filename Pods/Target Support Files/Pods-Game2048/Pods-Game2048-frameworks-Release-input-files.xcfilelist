@@ -1,2 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-Game2048/Pods-Game2048-frameworks.sh
+${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework
+${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework
+${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework
 ${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework

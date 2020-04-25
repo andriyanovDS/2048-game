@@ -1,20 +1,32 @@
 PODS:
+  - PromisesObjC (1.2.8)
+  - PromisesSwift (1.2.8):
+    - PromisesObjC (= 1.2.8)
+  - Starscream (3.1.1)
   - SteviaLayout (4.5.0)
   - SwiftLint (0.39.1)
 
 DEPENDENCIES:
+  - PromisesSwift (~> 1.2.8)
+  - Starscream (~> 3.1.1)
   - SteviaLayout (~> 4.5.0)
   - SwiftLint (~> 0.33)
 
 SPEC REPOS:
   trunk:
+    - PromisesObjC
+    - PromisesSwift
+    - Starscream
     - SteviaLayout
     - SwiftLint
 
 SPEC CHECKSUMS:
+  PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
+  PromisesSwift: 37bad6f4daddb02f7c9c531efe91e8b21c13ee2f
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
   SteviaLayout: aa64a62810544348c9e328a6521cb9160fa82ec6
   SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
 
-PODFILE CHECKSUM: a2eccadc6afceb5777b672fed714235a53708611
+PODFILE CHECKSUM: 5d6eed18c921dd366fa997c95ec0cde36e90ffad
 
 COCOAPODS: 1.8.4

@@ -1,41 +1,29 @@
 //
-//  GameboardView.swift
+//  BoardView.swift
 //  Game2048
 //
-//  Created by Dmitry on 21.04.2020.
+//  Created by Dmitry on 26.04.2020.
 //  Copyright © 2020 Dmitry. All rights reserved.
 //
 
 import UIKit
 import Stevia
 
-class GameboardView: UIView {
-  weak var dataSource: GameboardViewDataSource? {
-    didSet { setupPositions() }
-  }
+class BoardView: UIView {
+  weak var dataSource: BoardViewDataSource?
   var boardStackView = UIStackView()
-  let boardView = UIView()
-  let scoreValueLabel = UILabel()
-  let undoButton = UIButton()
-  let restartButton = UIButton()
-  private let scoreTitleLabel = UILabel()
   private var cellViews: [IndexPath: [CellView]] = [:]
-  
-  init() {
-    super.init(frame: CGRect.zero)
-    setupView()
-  }
-  
-  required init?(coder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
-  }
   
   struct Constants {
     static let boardWidth: CGFloat = UIScreen.main.bounds.width - 40
   }
   
+  func parentViewDidLoad() {
+    setupView()
+    setupPositions()
+  }
+  
   func clearCells(completion: @escaping () -> Void) {
-    scoreValueLabel.text = "0"
     let cells = cellViews.values.flatMap { $0 }
     UIView.animate(
       withDuration: 0.2,
@@ -44,7 +32,7 @@ class GameboardView: UIView {
           cell.alpha = 0
           cell.transform = cell.transform.scaledBy(x: 0.5, y: 0.5)
         }
-      },
+    },
       completion: {[weak self] _ in
         cells.forEach { $0.removeFromSuperview() }
         self?.cellViews = [:]
@@ -67,7 +55,7 @@ class GameboardView: UIView {
     cell.updateValue(value)
     cellViews[indexPath] = [cell]
     let positionView = view(at: IndexPath(item: 0, section: 0))
-    boardView.sv(cell)
+    sv(cell)
     let viewOrigin = translate(position: indexPath)
     cell
       .width(positionView.bounds.width)
@@ -121,7 +109,7 @@ class GameboardView: UIView {
     return positionView.convert(CGPoint.zero, to: boardStackView)
   }
   
-  private func setupPositions() {
+  func setupPositions() {
     guard let dataSource = self.dataSource else { return }
     let numberOfRows = dataSource.numberOfRows()
     boardStackView.axis = .vertical
@@ -142,46 +130,17 @@ class GameboardView: UIView {
       boardStackView.addArrangedSubview(stackView)
     }
     
-    boardView.sv(boardStackView)
+    sv(boardStackView)
     boardStackView.left(5).top(5).bottom(5).right(5)
   }
   
   private func setupView() {
     backgroundColor = .systemGray6
-    boardView.backgroundColor = .systemGray2
-    boardView.layer.cornerRadius = 10
-    
-    [scoreTitleLabel, scoreValueLabel]
-      .forEach { v in
-        v.textColor = .label
-        v.font = .systemFont(ofSize: 40)
-      }
-    scoreTitleLabel.text = "Score:"
-    scoreValueLabel.text = "0"
-    
-    [(undoButton, "gobackward"), (restartButton, "repeat")]
-      .forEach { (button, iconName) in
-        let imageConfig = UIImage.SymbolConfiguration(pointSize: 30)
-        let undoImage = UIImage(systemName: iconName, withConfiguration: imageConfig)
-        button.setImage(undoImage, for: .normal)
-        button.tintColor = .systemGray2
-      }
-    
-    sv([scoreTitleLabel, scoreValueLabel, boardView, restartButton, undoButton])
-    scoreTitleLabel.left(20)
-    scoreTitleLabel.Bottom == boardView.Top - 40
-    scoreValueLabel.CenterY == scoreTitleLabel.CenterY
-    scoreValueLabel.Left == scoreTitleLabel.Right + 5
-    undoButton.CenterY == scoreValueLabel.CenterY
-    restartButton.CenterY == undoButton.CenterY
-    restartButton.right(20)
-    undoButton.Right == restartButton.Left - 20
-    boardView
-      .size(Constants.boardWidth)
-      .centerInContainer()
+    backgroundColor = .systemGray2
+    layer.cornerRadius = 10
   }
 }
 
-protocol GameboardViewDataSource: class {
+protocol BoardViewDataSource: class {
   func numberOfRows() -> Int
 }

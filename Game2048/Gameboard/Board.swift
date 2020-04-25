@@ -12,7 +12,7 @@ class Board {
   typealias RandomValueGenerator = (ClosedRange<Int>) -> Int
   typealias RandomPositionGenerator = ([IndexPath]) -> IndexPath
   
-  private let size: Int
+  let size: Int
   private(set) var positions: [IndexPath: PositionValue] = [:]
   private(set) var cells: [Cell] = []
   private var emptyPositions: [IndexPath] {
@@ -40,7 +40,15 @@ class Board {
       let key = IndexPath(item: index/size, section: index % size)
       positions[key] = .empty
     }
+  }
+  
+  func setupRandomInitialCells() {
     Array(0..<Constants.initialCellCount).forEach { _ in addCell() }
+  }
+  
+  func appendCell(_ cell: Cell) {
+    positions[cell.position] = .filled(cell: cell)
+    self.cells.append(cell)
   }
   
   func restart() {
@@ -225,7 +233,7 @@ extension Board {
       self.position = randomCellPositionGenerator(emptyPositions)
     }
     
-    private init(position: IndexPath, value: Int) {
+    init(position: IndexPath, value: Int) {
       self.value = value
       self.position = position
     }

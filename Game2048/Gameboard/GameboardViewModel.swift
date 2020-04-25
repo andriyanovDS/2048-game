@@ -2,32 +2,28 @@
 //  GameboardViewModel.swift
 //  Game2048
 //
-//  Created by Dmitry on 21.04.2020.
+//  Created by Dmitry on 28.04.2020.
 //  Copyright © 2020 Dmitry. All rights reserved.
 //
 
 import Foundation
 
 class GameboardViewModelImpl: GameboardViewModel {
-  let size: Int
-  weak var delegate: GameboardViewModelDelegate? {
-    didSet { onViewReady() }
-  }
+  weak var delegate: GameboardViewModelDelegate?
   var score: Int = 0
-  private let board: Board
-  private var isGameCompleted: Bool = false
+  var size: Int { board.size }
+  var cells: [Board.Cell] { board.cells }
+  let board: Board
+  var isGameCompleted: Bool = false
   
-  init(size: Int) {
-    self.size = size
-    self.board = Board(size: size)
+  init(board: Board) {
+    self.board = board
   }
   
-  func undo() {
-    let (revertedMovements, lastCellPosition) = board.undoStep()
-    guard let movements = revertedMovements, let cellPosition = lastCellPosition else {
-      return
+  func viewDidLoad() {
+    board.cells.forEach {
+      delegate?.viewModel(self, insertCell: $0)
     }
-    delegate?.viewModel(self, didUndoStepWithMovements: movements, andRemoveCellAtPosition: cellPosition)
   }
   
   func restart() {
@@ -42,7 +38,7 @@ class GameboardViewModelImpl: GameboardViewModel {
       positionKeyPath: \.item,
       compareBy: >,
       nextPositionStepper: +=
-     ))
+    ))
   }
   
   func moveUp() {
@@ -80,7 +76,7 @@ class GameboardViewModelImpl: GameboardViewModel {
     }
   }
   
-  private func moveCells(moveAction: @autoclosure () -> [Movement]) {
+  func moveCells(moveAction: @autoclosure () -> [Movement]) {
     guard !isGameCompleted, let delegate = self.delegate else { return }
     let movements = moveAction()
     
@@ -95,11 +91,9 @@ class GameboardViewModelImpl: GameboardViewModel {
     
     updateScore(after: movements)
     delegate.viewModel(self, cellPositionsDidChangeWithMovements: movements)
-    let cell = board.addCell()
-    delegate.viewModel(self, insertCell: cell)
   }
   
-  private func updateScore(after movements: [Movement]) {
+  func updateScore(after movements: [Movement]) {
     score += movements
       .filter { $0 is DestructiveMovement }
       .reduce(0, { result, movement -> Int in
@@ -112,29 +106,25 @@ class GameboardViewModelImpl: GameboardViewModel {
       })
   }
   
-  private func onViewReady() {
-    board.cells.forEach {
-      delegate?.viewModel(self, insertCell: $0)
-    }
+  func addRandomCell() {
+    let cell = board.addCell()
+    delegate?.viewModel(self, insertCell: cell)
   }
-}
-
-enum GameResult {
-  case fail
-  case win
 }
 
 protocol GameboardViewModel: class {
   var size: Int { get }
+  var cells: [Board.Cell] { get }
   var score: Int { get }
   var delegate: GameboardViewModelDelegate? { get set }
   
-  func undo()
+  func viewDidLoad()
   func restart()
   func moveUp()
   func moveDown()
   func moveLeft()
   func moveRight()
+  func addRandomCell()
   func cellValue(at: IndexPath) -> Int
 }
 
@@ -148,4 +138,3 @@ protocol GameboardViewModelDelegate: class {
     andRemoveCellAtPosition: IndexPath
   )
 }
-

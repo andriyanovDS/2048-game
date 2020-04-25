@@ -19,93 +19,376 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		00DBF136EF636F784E5698521DE0509D /* Stevia+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7ACB4D9A0C7C50B1D00C1E23BC615F /* Stevia+Notifications.swift */; };
-		0D5B9A528AB015265E53A286E1570BBC /* Stevia+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF6D52C6C8681E9645E3D132C8A5172 /* Stevia+Content.swift */; };
-		21642523F227E758D45A919886BD6B17 /* Stevia+Fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB8442FA5685BFF9DA22D0E1566552 /* Stevia+Fill.swift */; };
-		2BDF1A3259B361A2D96E3DE35B6F4355 /* SteviaLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C82B755BA80319331F1F1FE47A3BB3 /* SteviaLayout-dummy.m */; };
-		2FF7766761D9D7AE4E9F9F6F184B5B0A /* Stevia+Baselines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A3FA588978BAA07F1262E47DF76604 /* Stevia+Baselines.swift */; };
-		3602575192699782A0E44DBD0739A3B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		424D5F4CBCDFEB534AD5001E11B4D26D /* SteviaLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DC9F421F902B2D0B24F25669810EF87 /* SteviaLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43F160ADD121807198652278449BE055 /* Stevia+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A945DC2B66E474C51D89AE1F2C5C0A61 /* Stevia+Operators.swift */; };
-		46EB11A75164D6B5C463B59F02385F50 /* Stevia+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58016009FBE343F7EE881BBE943431B4 /* Stevia+Size.swift */; };
-		4BFD02D9C34FF758ADF0B3421E4D3A5B /* Stevia+Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DAD72E5F3A219A13C782739A3736B6 /* Stevia+Alignment.swift */; };
-		4CCBAB72FBA0A2414C16C30EDEECE65C /* Stevia+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA61CC7C149D8ACCEFF5584D6499F703 /* Stevia+Position.swift */; };
-		5223F6E70ED0B80BD9714D76EC69FC84 /* Pods-Game2048-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0685068DF053999496E99F7BF6FC8974 /* Pods-Game2048-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79B3C29B885EB5228FCFA844A5DB59C0 /* Stevia+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC50A3B8458A396035DFC2C997E6719 /* Stevia+Style.swift */; };
-		81E33894E9D53B0C69BBCAD762D9E61E /* Stevia+Stacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7798456BEA77660A3DAF80714C86B8 /* Stevia+Stacks.swift */; };
-		82135A77E07D48BDD75C3629E7863E27 /* Pods-Game2048-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7974F4F43709FBF64A6E7578551DF70F /* Pods-Game2048-dummy.m */; };
-		8FBE7D9A8577488197B2279E7912C25A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		A0C0C44C5BB2F48A7B2A49E1FC660C35 /* Stevia+Percentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB81FE4203581390EE5190905987047 /* Stevia+Percentage.swift */; };
-		AADE42C4163F422BE086BADA328B98A2 /* Stevia+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E05001137FCC5E35ECCF73478364F1 /* Stevia+Hierarchy.swift */; };
-		AB5363879FF2C3B9D3772ED74C84F919 /* Stevia+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9EC8329598A438C67C006252A11C55 /* Stevia+Center.swift */; };
-		ABF4174C9628772D1310FCB07D92C240 /* Stevia+LayoutAnchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731A4E0CBEC8C4FDD83E71E9C48A6BAD /* Stevia+LayoutAnchors.swift */; };
-		B48060604C385CFF12CF5752CF786FDB /* Stevia+Equation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB341A7F26B35D344D5A40FD362C8E1 /* Stevia+Equation.swift */; };
-		D3E994C14BF413E9A773B0DCCB01AC93 /* Stevia+FlexibleMargin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E368A82FDBB5B85391FCB3B2A87AC7E /* Stevia+FlexibleMargin.swift */; };
-		D5F6DFA08825B41AA225491CDBD767B4 /* Stevia+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172AC566E28B3E223DBDCB888A4775C7 /* Stevia+Constraints.swift */; };
-		D63B37769F5A098672374AC8F90AC8EE /* Stevia+DoubleDash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5F00C397B7C77889F12893E4A3F97 /* Stevia+DoubleDash.swift */; };
-		EF2ADCB1636861CB8650C9CFF8F992D1 /* Stevia+GetConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BEB751E543FD53D0225D54408D3263 /* Stevia+GetConstraint.swift */; };
+		00DBF136EF636F784E5698521DE0509D /* Stevia+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FFB744C9D8F3E8E7A5D35C6663CA2 /* Stevia+Notifications.swift */; };
+		0326CBB5ADC63ACD09EDB395D40E4ACE /* Promise+Retry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A77D8154A5B8FCCB144A04C59433402 /* Promise+Retry.swift */; };
+		03B801721CD360533ACEE638044E61C6 /* PromisesObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CEBD5FEFEB717AF0580158DD544DE2 /* PromisesObjC-dummy.m */; };
+		0410D02A7738D0DD275563C7799FF250 /* Promise+Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA1FD13631E5E8AC6316DB3E43B29BE /* Promise+Any.swift */; };
+		068E5963381B58D7D8CD321462F567ED /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC518E19EEF1BB98E37A8C52DA2A1A0 /* Compression.swift */; };
+		08F45086582B1AF9CC6B5DBEE782F328 /* PromisesObjC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5666817F4E24BC2C0411B572BB103479 /* PromisesObjC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A5541F5E270DF34248BB8171A6AF699 /* FBLPromise+Recover.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = F47EBA12DF440DC03A9DCCAA11B7E4CD /* FBLPromise+Recover.h */; };
+		0A8E956756DCE2131B1A1335E6AF28B2 /* FBLPromise+Delay.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3C452072FC643EBBF95EEE56AF4AB /* FBLPromise+Delay.m */; };
+		0D5B9A528AB015265E53A286E1570BBC /* Stevia+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A96434880734E9B4B3E9DFE6B328F0C /* Stevia+Content.swift */; };
+		0F0E0F1224D5B962BC5D538C3D3CCD18 /* FBLPromise+Always.h in Headers */ = {isa = PBXBuildFile; fileRef = 43F55ECFCDBAE6AFCF4759385B6ABF10 /* FBLPromise+Always.h */; };
+		118B9415E864001C6179A0C45CED2C5F /* Promise+Reduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90B022CE8937A60E8A79281EE2DFCB9 /* Promise+Reduce.swift */; };
+		1627E6FA0453D6DB472BA444F1D32AE7 /* SSLClientCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4623DC701B5591698EBB1C712A2C4867 /* SSLClientCertificate.swift */; };
+		1B5895487247616AF6FF20BBACE21DB9 /* FBLPromise+Catch.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 80A1E6B14684C3B013EBD0F8E00A0756 /* FBLPromise+Catch.h */; };
+		1FFF43186DD6499BC33C595DF27718B8 /* FBLPromise+Reduce.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FEE97728F3D316C3F365A14AB2CD28 /* FBLPromise+Reduce.m */; };
+		20D766DCB9164F883B3430A88C5B6BC1 /* FBLPromise+Retry.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE12A61DFD98C5A78546C80A8EC5D4F /* FBLPromise+Retry.h */; };
+		21642523F227E758D45A919886BD6B17 /* Stevia+Fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DACCC491AD2A9F46FFB0CF15AB5E53 /* Stevia+Fill.swift */; };
+		24D9F5C1A2BC94B5E4C0A26DEE0D985B /* Promise+Await.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996DCB2826DD6724AA0590F921A07DC5 /* Promise+Await.swift */; };
+		286CDD2DD9246B82386B25B9885F2CD3 /* FBLPromise+Timeout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C853745962DE622F2E4F0EB65AD25C4 /* FBLPromise+Timeout.h */; };
+		28C4507C62CAB7152878754F4B4C2CC8 /* FBLPromise+Async.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D9CA63752B5E11E817351FF2D76D7CF /* FBLPromise+Async.h */; };
+		294D61E8A195B6A1F6AEDCF0F73599A5 /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3EC21E02B1F8E7AAB76798F30AC2479 /* Starscream-dummy.m */; };
+		2B02541E74927277F07513CF78122EFB /* FBLPromise+Any.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD706E5F10C8BB2D132241FFA20F867 /* FBLPromise+Any.h */; };
+		2BAD04C416FE755B5123CEF34AB33B29 /* FBLPromise+Validate.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 0189ACBBD7BDE824F7CD5B888B7AD08F /* FBLPromise+Validate.h */; };
+		2BDF1A3259B361A2D96E3DE35B6F4355 /* SteviaLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B44B10B2D2CB0DE0D41FE3BAC398031 /* SteviaLayout-dummy.m */; };
+		2FF7766761D9D7AE4E9F9F6F184B5B0A /* Stevia+Baselines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7652F4E8A2F65F7C5D123992E16B3976 /* Stevia+Baselines.swift */; };
+		3170239393A057F80A512FE4BE61211B /* FBLPromise+Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43086D2C43B4F0775D23C50FD77DA5A5 /* FBLPromise+Validate.m */; };
+		32D8F65D82085E2221A671818B0EBF2C /* FBLPromise+Then.m in Sources */ = {isa = PBXBuildFile; fileRef = 8737ED3E4B936E9D31A3D14D97927010 /* FBLPromise+Then.m */; };
+		333A42A84C4757CE1D1D7E5434799E98 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63397076FB643D53C06558B4FE6A46F7 /* Promise.swift */; };
+		348A72CBE6B5D3CD3B6FCB9284A7CB96 /* FBLPromise+All.m in Sources */ = {isa = PBXBuildFile; fileRef = D060C68732357CDE950D655B4A624746 /* FBLPromise+All.m */; };
+		3520B1EB07B684F4F3CB13526E1F1BE2 /* FBLPromise+Wrap.m in Sources */ = {isa = PBXBuildFile; fileRef = C90B37AD60BC371B3BA0D16B3379F155 /* FBLPromise+Wrap.m */; };
+		3663DCC84FEC8401C922CE8B7772A586 /* FBLPromise+Testing.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = B8FD641C4BF663CB436FD929932EC714 /* FBLPromise+Testing.h */; };
+		3D49D94F3651687E3219DD25A0FBB86C /* FBLPromiseError.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 865436E0E1CD66ACCBBEFCE09E44462D /* FBLPromiseError.h */; };
+		3E4697FDA1C2BB0F9DE2DABA61A4BE3D /* FBLPromise+All.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = C5E7A930539AD19669D32F72A23C1159 /* FBLPromise+All.h */; };
+		4084890A23CEC31F7A200F8380EB1AFC /* Promise+Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B55895CE95754EAD869D4AA0D2284E /* Promise+Delay.swift */; };
+		424D5F4CBCDFEB534AD5001E11B4D26D /* SteviaLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D072238333BA51A5A59A74B4D6E6F391 /* SteviaLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43F160ADD121807198652278449BE055 /* Stevia+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB14B9932A69B836CEFB6E79277D8CF /* Stevia+Operators.swift */; };
+		44FCF98E0E654DDA847B33B0CA28F526 /* PromisesSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E2E426AEAB606D43F54B06989033D7 /* PromisesSwift-dummy.m */; };
+		46EB11A75164D6B5C463B59F02385F50 /* Stevia+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A23D9C13DBF53D40C8618353AE900F /* Stevia+Size.swift */; };
+		4BFD02D9C34FF758ADF0B3421E4D3A5B /* Stevia+Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD393A42092EB75D5729256AB87494 /* Stevia+Alignment.swift */; };
+		4CCBAB72FBA0A2414C16C30EDEECE65C /* Stevia+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE292310BF24A05BD1F52A88ECA09484 /* Stevia+Position.swift */; };
+		4CE445CBB4F1F451C74BB6A7B85622D9 /* FBLPromise+Await.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = C338B7F3584389868330A1090BAC83B2 /* FBLPromise+Await.h */; };
+		4DE979F69108ED81C78A900628C35385 /* Pods-Game2048-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0685068DF053999496E99F7BF6FC8974 /* Pods-Game2048-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EAD8E875568F7EC8565DE569F31A296 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3C1EB539A57B6F7CBF5F5F61AEC46A /* Foundation.framework */; };
+		5B357C2B8A631BB75CAA1F3700E7A31E /* FBLPromiseError.h in Headers */ = {isa = PBXBuildFile; fileRef = 865436E0E1CD66ACCBBEFCE09E44462D /* FBLPromiseError.h */; };
+		5C8FF72099514B9E1EF9263C9FACBC8A /* FBLPromises.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E281075477FEC555E6B91B369CA767B /* FBLPromises.h */; };
+		5CE828E841EBAA5C2D382A43D4444598 /* PromiseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A9E2CDAC6CB8C11FC0C3A647F79371 /* PromiseError.swift */; };
+		673FEA8EC0DF3439F91709B66519FBC8 /* Promise+Catch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ACEF5245DA75435E7B5DF2FA5008EF /* Promise+Catch.swift */; };
+		68785DC7345AE2FFC62CB57EADDE4473 /* FBLPromise+Await.h in Headers */ = {isa = PBXBuildFile; fileRef = C338B7F3584389868330A1090BAC83B2 /* FBLPromise+Await.h */; };
+		6C83A06BB313FF59F6B13BE3FC10DF1F /* FBLPromise+Wrap.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 966D703D677A281457E8515E59815E93 /* FBLPromise+Wrap.h */; };
+		6CCB14ECECA23B5AFAA89672DC39516B /* FBLPromise+Reduce.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 9B7F680252B562AF8F425F5662D62B58 /* FBLPromise+Reduce.h */; };
+		6CF730A59E41E5B26907B75BAA3F5B5E /* FBLPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 71A754BD3FBA7D0D6A4047733D4C81D0 /* FBLPromise.h */; };
+		700E20AD17E9ACE955659E30F3D113E4 /* FBLPromise+Always.m in Sources */ = {isa = PBXBuildFile; fileRef = B38BA8F635EAFBCEF96189EB16AEAB76 /* FBLPromise+Always.m */; };
+		708AAE8AF48E758352B8CDA6D30B9CF5 /* FBLPromise+Delay.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F6D17A2581D31025F9C2EC6AD81D4E5 /* FBLPromise+Delay.h */; };
+		7414FF2E6588994512C30D41AA4A9836 /* FBLPromisePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 10E0FD42674B60D88FD32A531C489D3D /* FBLPromisePrivate.h */; };
+		7432A426D25A902E6943764D7BF2E347 /* Promise+Recover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A3D574C21BAF15099B03909A66BDB6 /* Promise+Recover.swift */; };
+		743CE2B140B5F19FFB78F8CA1A9D351A /* FBLPromise.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 71A754BD3FBA7D0D6A4047733D4C81D0 /* FBLPromise.h */; };
+		79B3C29B885EB5228FCFA844A5DB59C0 /* Stevia+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E149DD3194FA904EE37E8D13C78AC3 /* Stevia+Style.swift */; };
+		7BDD8E22E4919CEC1367D8885D1D7E40 /* Promise+Do.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28207147AC9ACCF45A69FF9B42815A6B /* Promise+Do.swift */; };
+		7EEE47D28CA1C1480BE607B85B2FFD7C /* FBLPromise+Then.h in Headers */ = {isa = PBXBuildFile; fileRef = B4A3186B01C3EAA5F790D04A9EF0080A /* FBLPromise+Then.h */; };
+		7F62AF633793D6AB5E4330EE29CC4C6D /* FBLPromise+Validate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0189ACBBD7BDE824F7CD5B888B7AD08F /* FBLPromise+Validate.h */; };
+		814393B84549ED33F72A7BBA3AD1CD18 /* FBLPromise+Delay.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 6F6D17A2581D31025F9C2EC6AD81D4E5 /* FBLPromise+Delay.h */; };
+		81E33894E9D53B0C69BBCAD762D9E61E /* Stevia+Stacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBFE79460396B1241A35967EB9A7A20 /* Stevia+Stacks.swift */; };
+		82DE2772D105360C4508B66D84C65C05 /* FBLPromise+Wrap.h in Headers */ = {isa = PBXBuildFile; fileRef = 966D703D677A281457E8515E59815E93 /* FBLPromise+Wrap.h */; };
+		891C69433F0A882A9D132FFEF65E6B53 /* FBLPromise+Do.h in Headers */ = {isa = PBXBuildFile; fileRef = 02E51AD726ED8D86AE30FDC52ED62244 /* FBLPromise+Do.h */; };
+		8B3350D96B15B975184C8EE0819F9623 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576446D85966A068642F99D458DBEA21 /* SSLSecurity.swift */; };
+		8FBE7D9A8577488197B2279E7912C25A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3C1EB539A57B6F7CBF5F5F61AEC46A /* Foundation.framework */; };
+		8FC02AB06FEF421E86AA1F2CB3FD467F /* FBLPromises.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62020A4F2BCB9E86DA99881A00474E3F /* FBLPromises.framework */; };
+		9030750E491524F089268BA02A167008 /* FBLPromise+Do.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC5CA68D854267A731BB14FEE3EB588 /* FBLPromise+Do.m */; };
+		9608153C8064AD3230D0D5E408D796FB /* FBLPromises.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 3E281075477FEC555E6B91B369CA767B /* FBLPromises.h */; };
+		96D67F9A7630A34944B6EAAD47F785E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3C1EB539A57B6F7CBF5F5F61AEC46A /* Foundation.framework */; };
+		9B1B90C996B9A3A1DD9274FA523A4CE5 /* FBLPromise+Catch.m in Sources */ = {isa = PBXBuildFile; fileRef = E49BF4EC3C719E6833BB920594F36C98 /* FBLPromise+Catch.m */; };
+		9BF4EDAEB189A612EFDFFBB929C3EE7D /* FBLPromise+Recover.m in Sources */ = {isa = PBXBuildFile; fileRef = 697737F14F408922583E274BEAEAB47C /* FBLPromise+Recover.m */; };
+		9EFDED082CBF3525EFCC4A56CE41B14C /* FBLPromise+Catch.h in Headers */ = {isa = PBXBuildFile; fileRef = 80A1E6B14684C3B013EBD0F8E00A0756 /* FBLPromise+Catch.h */; };
+		A0C0C44C5BB2F48A7B2A49E1FC660C35 /* Stevia+Percentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DC9B0EB4C6B5ACD3DA5E7030433B38 /* Stevia+Percentage.swift */; };
+		A35805D1C0A1499FEA9E78A05491EFCA /* FBLPromise+Any.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8DB82F87A62BBAAC1131F55E73BBC6 /* FBLPromise+Any.m */; };
+		A5BE655282AA0B247B65DE88EDE0B1FB /* FBLPromise+Timeout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6514AF078583C93EBA24E202202F09B9 /* FBLPromise+Timeout.m */; };
+		AA28BA83FD86EC471ACC2728ECF4F599 /* FBLPromise+Do.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 02E51AD726ED8D86AE30FDC52ED62244 /* FBLPromise+Do.h */; };
+		AADE42C4163F422BE086BADA328B98A2 /* Stevia+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56C3959EF4FD073E6CD722321A9EAF9 /* Stevia+Hierarchy.swift */; };
+		AB5363879FF2C3B9D3772ED74C84F919 /* Stevia+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806FA5E9A7C31BBC938870666E9D55F7 /* Stevia+Center.swift */; };
+		ABE464E60091D4034142D19E58C497EF /* Promise+All.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3721C747EDB96E66F07B395587D08E3E /* Promise+All.swift */; };
+		ABF4174C9628772D1310FCB07D92C240 /* Stevia+LayoutAnchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636CFFFC20D4C40CE186DCA7A135292E /* Stevia+LayoutAnchors.swift */; };
+		AD807404332D0020A308C0644B0ACA75 /* FBLPromise+Reduce.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B7F680252B562AF8F425F5662D62B58 /* FBLPromise+Reduce.h */; };
+		AE238DD5746780C64783F7BED7527BDC /* Promise+Timeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8000C7F75E86FEAFFD2329BD117E81 /* Promise+Timeout.swift */; };
+		B48060604C385CFF12CF5752CF786FDB /* Stevia+Equation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DC003B4CA7094878DFE6F40312049C /* Stevia+Equation.swift */; };
+		B4A6283FDFA04E3A7B6FD0C13B6FEF32 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3500BD45682812ABC11EF424E535935B /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B54DCBE3035A3D7D80CF7FEE88B76551 /* FBLPromise+Retry.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A28E221BE3E9B693D42FFD6A0CD97F6 /* FBLPromise+Retry.m */; };
+		B674DB2C16A11C63F15C08342FB4EC35 /* FBLPromise+Testing.h in Headers */ = {isa = PBXBuildFile; fileRef = B8FD641C4BF663CB436FD929932EC714 /* FBLPromise+Testing.h */; };
+		B8A9D3369371142E7C22EE32C7CE1658 /* FBLPromise+Any.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = FFD706E5F10C8BB2D132241FFA20F867 /* FBLPromise+Any.h */; };
+		BA8FF4041409A92E054D57ABD07B93E2 /* FBLPromise+Timeout.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 4C853745962DE622F2E4F0EB65AD25C4 /* FBLPromise+Timeout.h */; };
+		BC00C30CCC09F7AC6A1F0D024882FBA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3C1EB539A57B6F7CBF5F5F61AEC46A /* Foundation.framework */; };
+		BF1AE495B7D0127034B477EB51ED8AD4 /* Promise+Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC3BE269F5308BE6BA122918873CF4C /* Promise+Async.swift */; };
+		BFD9A274235398CE79122A177567D750 /* FBLPromise+Race.h in Headers */ = {isa = PBXBuildFile; fileRef = 913B1CB4020F289CE33FF690DE916C0A /* FBLPromise+Race.h */; };
+		C02D9FEB295BDA1359D2F52C80F8E75A /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD54A9D4ADF12BEF22D2BF0C0F44D94 /* WebSocket.swift */; };
+		C0CA325453A545B8F01ED84D32090DDD /* Promise+Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF76E25D1259B9B0677ACC7972B8F8 /* Promise+Validate.swift */; };
+		C10269A688159EA41BC61D5436096DBC /* PromisesSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDB0A5BE869BD5AC783D2F46678A22DD /* PromisesSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C21998133E7C15D221620819C6A6316E /* FBLPromise+Retry.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 3AE12A61DFD98C5A78546C80A8EC5D4F /* FBLPromise+Retry.h */; };
+		C63D4A9F8C9E55686831EDA475A2F88A /* FBLPromisePrivate.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = 10E0FD42674B60D88FD32A531C489D3D /* FBLPromisePrivate.h */; };
+		C6700A734BA724F44CCACB4493579A4A /* Promise+Wrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7C92C5DE1F92C60A680FA0792716D0 /* Promise+Wrap.swift */; };
+		C781B818EB7C48260639B896B1AC9566 /* Pods-Game2048-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7974F4F43709FBF64A6E7578551DF70F /* Pods-Game2048-dummy.m */; };
+		C8A051F1D1C692F86F0FC347CD9FB761 /* FBLPromise+Then.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = B4A3186B01C3EAA5F790D04A9EF0080A /* FBLPromise+Then.h */; };
+		CA3220FD7932EA752D6934516DD248D3 /* FBLPromise+Async.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CBF8ED56C5BAE6DE1B4A635AA2266 /* FBLPromise+Async.m */; };
+		CD283B13E2ACBACD129668282923270B /* Promise+Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F565F6A1ECE1720E80FB433AFD9338 /* Promise+Testing.swift */; };
+		D2C8BC9C948ACE8051D07C0904FF1F89 /* FBLPromise+Race.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 913B1CB4020F289CE33FF690DE916C0A /* FBLPromise+Race.h */; };
+		D3E994C14BF413E9A773B0DCCB01AC93 /* Stevia+FlexibleMargin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CC8BD3A2FB1996E38572EF43CF485D /* Stevia+FlexibleMargin.swift */; };
+		D46EDF87FDC9FDF3E18FC9ED132600B8 /* FBLPromise+Recover.h in Headers */ = {isa = PBXBuildFile; fileRef = F47EBA12DF440DC03A9DCCAA11B7E4CD /* FBLPromise+Recover.h */; };
+		D50FDE9473F24A0D19FAE69B815BBEA3 /* Promise+Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEDD28C25E152D93D6B70DC29E9C09D /* Promise+Race.swift */; };
+		D5F6DFA08825B41AA225491CDBD767B4 /* Stevia+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AF14F0BC43E9AE1D839A37026680D4 /* Stevia+Constraints.swift */; };
+		D63B37769F5A098672374AC8F90AC8EE /* Stevia+DoubleDash.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA467F0E5F25FABE190D429704508E95 /* Stevia+DoubleDash.swift */; };
+		D6756C287309D6ED1C26CD4E3684B455 /* Promise+Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4F4C052AE1202E5605B08309B651FB /* Promise+Then.swift */; };
+		D71B795B906375F8DDF7CA8016CCE09D /* Promise+Always.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC3690CF0471B37C53E45AC8E70988 /* Promise+Always.swift */; };
+		D9AB246F26E09667B0156A88D4D10954 /* FBLPromise+Testing.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0B3B87DE436117AC8EB619B14659CD /* FBLPromise+Testing.m */; };
+		DB1FC1F850ED438518DB6573CFE5ACAC /* FBLPromise+Async.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 4D9CA63752B5E11E817351FF2D76D7CF /* FBLPromise+Async.h */; };
+		E89DF29C074E90D42E67D3FD553F8CD3 /* FBLPromise+All.h in Headers */ = {isa = PBXBuildFile; fileRef = C5E7A930539AD19669D32F72A23C1159 /* FBLPromise+All.h */; };
+		EF2ADCB1636861CB8650C9CFF8F992D1 /* Stevia+GetConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A031CD2E5087C6004960E500B13A6FA /* Stevia+GetConstraint.swift */; };
+		F0DF09C7D785E312A7338A6FA50BB8ED /* FBLPromise+Await.m in Sources */ = {isa = PBXBuildFile; fileRef = 2521BC31E1BD8CC71AAEDBA9CEDF138C /* FBLPromise+Await.m */; };
+		F6E1BD2A5500D310F70D7AD2CA4738BC /* FBLPromiseError.m in Sources */ = {isa = PBXBuildFile; fileRef = 9493C0539815DF6FE15FA5CA2481A7B1 /* FBLPromiseError.m */; };
+		F9AC9FC0DA451BD41B522B7638BEC3E7 /* FBLPromise+Always.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 43F55ECFCDBAE6AFCF4759385B6ABF10 /* FBLPromise+Always.h */; };
+		FAA631E6D3DDE70624DF19C0B220C6BB /* FBLPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1E839AB3C869E7C6BBED4F655BF3B9 /* FBLPromise.m */; };
+		FC2850237AD025421E9F0F4C1B6E6ADB /* FBLPromise+Race.m in Sources */ = {isa = PBXBuildFile; fileRef = E46CEA663DE6A77DE298F5FA86892DDA /* FBLPromise+Race.m */; };
+		FEEA181092C38AE2D85C271D4FA3842F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3C1EB539A57B6F7CBF5F5F61AEC46A /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2613763A4091D1048520EBBAF2A199EC /* PBXContainerItemProxy */ = {
+		2ABAFB7D24E0AECAAADF7504D31F208F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
-			remoteInfo = SwiftLint;
+			remoteGlobalIDString = 2BBF7206D7FAC92C82A042A99C4A98F8;
+			remoteInfo = PromisesObjC;
 		};
-		3E7817E11887778BCA8843CFB60CE3E0 /* PBXContainerItemProxy */ = {
+		526B127C42F7F2287BF58F43BAAA8D3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		A108E0032F128AD14BC6942CB06E17B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CF263AB023E40C4315ED4A97C6D7829F;
 			remoteInfo = SteviaLayout;
 		};
+		A4DCB933F92A32A296FA0B5A2C8648FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A979F9D3632CD5F2F7518F9A362CBAE3;
+			remoteInfo = PromisesSwift;
+		};
+		C97C0B15566822BFC822C0BC1C4B6F60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		DC82ED5DDDDBE8E426113D1718842816 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BBF7206D7FAC92C82A042A99C4A98F8;
+			remoteInfo = PromisesObjC;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7030B4E1A7C8F71BC1080052A86D1B31 /* Copy . Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/.";
+			dstSubfolderSpec = 16;
+			files = (
+				3E4697FDA1C2BB0F9DE2DABA61A4BE3D /* FBLPromise+All.h in Copy . Public Headers */,
+				F9AC9FC0DA451BD41B522B7638BEC3E7 /* FBLPromise+Always.h in Copy . Public Headers */,
+				B8A9D3369371142E7C22EE32C7CE1658 /* FBLPromise+Any.h in Copy . Public Headers */,
+				DB1FC1F850ED438518DB6573CFE5ACAC /* FBLPromise+Async.h in Copy . Public Headers */,
+				4CE445CBB4F1F451C74BB6A7B85622D9 /* FBLPromise+Await.h in Copy . Public Headers */,
+				1B5895487247616AF6FF20BBACE21DB9 /* FBLPromise+Catch.h in Copy . Public Headers */,
+				814393B84549ED33F72A7BBA3AD1CD18 /* FBLPromise+Delay.h in Copy . Public Headers */,
+				AA28BA83FD86EC471ACC2728ECF4F599 /* FBLPromise+Do.h in Copy . Public Headers */,
+				D2C8BC9C948ACE8051D07C0904FF1F89 /* FBLPromise+Race.h in Copy . Public Headers */,
+				0A5541F5E270DF34248BB8171A6AF699 /* FBLPromise+Recover.h in Copy . Public Headers */,
+				6CCB14ECECA23B5AFAA89672DC39516B /* FBLPromise+Reduce.h in Copy . Public Headers */,
+				C21998133E7C15D221620819C6A6316E /* FBLPromise+Retry.h in Copy . Public Headers */,
+				3663DCC84FEC8401C922CE8B7772A586 /* FBLPromise+Testing.h in Copy . Public Headers */,
+				C8A051F1D1C692F86F0FC347CD9FB761 /* FBLPromise+Then.h in Copy . Public Headers */,
+				BA8FF4041409A92E054D57ABD07B93E2 /* FBLPromise+Timeout.h in Copy . Public Headers */,
+				2BAD04C416FE755B5123CEF34AB33B29 /* FBLPromise+Validate.h in Copy . Public Headers */,
+				6C83A06BB313FF59F6B13BE3FC10DF1F /* FBLPromise+Wrap.h in Copy . Public Headers */,
+				743CE2B140B5F19FFB78F8CA1A9D351A /* FBLPromise.h in Copy . Public Headers */,
+				3D49D94F3651687E3219DD25A0FBB86C /* FBLPromiseError.h in Copy . Public Headers */,
+				9608153C8064AD3230D0D5E408D796FB /* FBLPromises.h in Copy . Public Headers */,
+			);
+			name = "Copy . Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A6D0656242CA792EED56D6D0B026DC9 /* Copy . Private Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PRIVATE_HEADERS_FOLDER_PATH)/.";
+			dstSubfolderSpec = 16;
+			files = (
+				C63D4A9F8C9E55686831EDA475A2F88A /* FBLPromisePrivate.h in Copy . Private Headers */,
+			);
+			name = "Copy . Private Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0189ACBBD7BDE824F7CD5B888B7AD08F /* FBLPromise+Validate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Validate.h"; path = "Sources/FBLPromises/include/FBLPromise+Validate.h"; sourceTree = "<group>"; };
+		01DC9B0EB4C6B5ACD3DA5E7030433B38 /* Stevia+Percentage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Percentage.swift"; path = "Source/Stevia+Percentage.swift"; sourceTree = "<group>"; };
+		02E51AD726ED8D86AE30FDC52ED62244 /* FBLPromise+Do.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Do.h"; path = "Sources/FBLPromises/include/FBLPromise+Do.h"; sourceTree = "<group>"; };
 		0685068DF053999496E99F7BF6FC8974 /* Pods-Game2048-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Game2048-umbrella.h"; sourceTree = "<group>"; };
 		0E2E6AB9B211D460C9C0B195BC5D9A4B /* Pods-Game2048-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Game2048-acknowledgements.plist"; sourceTree = "<group>"; };
-		0FB341A7F26B35D344D5A40FD362C8E1 /* Stevia+Equation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Equation.swift"; path = "Source/Stevia+Equation.swift"; sourceTree = "<group>"; };
-		172AC566E28B3E223DBDCB888A4775C7 /* Stevia+Constraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Constraints.swift"; path = "Source/Stevia+Constraints.swift"; sourceTree = "<group>"; };
-		175160FA03C7F96B575AC3D7343B1E77 /* SwiftLint.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.xcconfig; sourceTree = "<group>"; };
+		0F08DA1FD3B11C30A38A7296DA69B9A0 /* PromisesSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PromisesSwift-Info.plist"; sourceTree = "<group>"; };
+		10E0FD42674B60D88FD32A531C489D3D /* FBLPromisePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLPromisePrivate.h; path = Sources/FBLPromises/include/FBLPromisePrivate.h; sourceTree = "<group>"; };
+		112EAEF29F716F414DB865367F49E38F /* PromisesSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromisesSwift.xcconfig; sourceTree = "<group>"; };
+		11E2E426AEAB606D43F54B06989033D7 /* PromisesSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromisesSwift-dummy.m"; sourceTree = "<group>"; };
+		13FEE97728F3D316C3F365A14AB2CD28 /* FBLPromise+Reduce.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Reduce.m"; path = "Sources/FBLPromises/FBLPromise+Reduce.m"; sourceTree = "<group>"; };
+		1A28E221BE3E9B693D42FFD6A0CD97F6 /* FBLPromise+Retry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Retry.m"; path = "Sources/FBLPromises/FBLPromise+Retry.m"; sourceTree = "<group>"; };
 		1C5AFEA78CC52ED5F6669E98DF74BF8C /* Pods-Game2048.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Game2048.modulemap"; sourceTree = "<group>"; };
-		21BEB751E543FD53D0225D54408D3263 /* Stevia+GetConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+GetConstraint.swift"; path = "Source/Stevia+GetConstraint.swift"; sourceTree = "<group>"; };
+		2521BC31E1BD8CC71AAEDBA9CEDF138C /* FBLPromise+Await.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Await.m"; path = "Sources/FBLPromises/FBLPromise+Await.m"; sourceTree = "<group>"; };
 		27BA15B75A5E9FCA09B659CCC787C06F /* Pods-Game2048.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Game2048.debug.xcconfig"; sourceTree = "<group>"; };
+		28207147AC9ACCF45A69FF9B42815A6B /* Promise+Do.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Do.swift"; path = "Sources/Promises/Promise+Do.swift"; sourceTree = "<group>"; };
+		29AF14F0BC43E9AE1D839A37026680D4 /* Stevia+Constraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Constraints.swift"; path = "Source/Stevia+Constraints.swift"; sourceTree = "<group>"; };
+		2A031CD2E5087C6004960E500B13A6FA /* Stevia+GetConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+GetConstraint.swift"; path = "Source/Stevia+GetConstraint.swift"; sourceTree = "<group>"; };
 		2A4978A3101E949DC369485EDB80B1DB /* Pods-Game2048-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Game2048-frameworks.sh"; sourceTree = "<group>"; };
-		2CB81FE4203581390EE5190905987047 /* Stevia+Percentage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Percentage.swift"; path = "Source/Stevia+Percentage.swift"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		36591793297D4851AAE0E17C6D8D9FD2 /* SteviaLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SteviaLayout.modulemap; sourceTree = "<group>"; };
+		2A96434880734E9B4B3E9DFE6B328F0C /* Stevia+Content.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Content.swift"; path = "Source/Stevia+Content.swift"; sourceTree = "<group>"; };
+		2AE3C452072FC643EBBF95EEE56AF4AB /* FBLPromise+Delay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Delay.m"; path = "Sources/FBLPromises/FBLPromise+Delay.m"; sourceTree = "<group>"; };
+		2D8DB82F87A62BBAAC1131F55E73BBC6 /* FBLPromise+Any.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Any.m"; path = "Sources/FBLPromises/FBLPromise+Any.m"; sourceTree = "<group>"; };
+		2DA1FD13631E5E8AC6316DB3E43B29BE /* Promise+Any.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Any.swift"; path = "Sources/Promises/Promise+Any.swift"; sourceTree = "<group>"; };
+		2DC5CA68D854267A731BB14FEE3EB588 /* FBLPromise+Do.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Do.m"; path = "Sources/FBLPromises/FBLPromise+Do.m"; sourceTree = "<group>"; };
+		2E21EC9A580AC87911CEF9DBD7192222 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
+		3347A1AB6546F0A3977529B8F199DC41 /* FBLPromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBLPromises.framework; path = PromisesObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3500BD45682812ABC11EF424E535935B /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		3721C747EDB96E66F07B395587D08E3E /* Promise+All.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+All.swift"; path = "Sources/Promises/Promise+All.swift"; sourceTree = "<group>"; };
+		379E5319BC6B4AE5613DFF7EEEAA6905 /* Promises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Promises.framework; path = PromisesSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A6470D1CDB12987096B5F5A534CBA1B /* Pods-Game2048-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Game2048-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3AD3BB2F2B3D16E6242C538EE4B43235 /* SteviaLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SteviaLayout-Info.plist"; sourceTree = "<group>"; };
-		3D7ACB4D9A0C7C50B1D00C1E23BC615F /* Stevia+Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Notifications.swift"; path = "Source/Stevia+Notifications.swift"; sourceTree = "<group>"; };
-		42A3FA588978BAA07F1262E47DF76604 /* Stevia+Baselines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Baselines.swift"; path = "Source/Stevia+Baselines.swift"; sourceTree = "<group>"; };
-		4EDB8442FA5685BFF9DA22D0E1566552 /* Stevia+Fill.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Fill.swift"; path = "Source/Stevia+Fill.swift"; sourceTree = "<group>"; };
-		58016009FBE343F7EE881BBE943431B4 /* Stevia+Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Size.swift"; path = "Source/Stevia+Size.swift"; sourceTree = "<group>"; };
-		5BC50A3B8458A396035DFC2C997E6719 /* Stevia+Style.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Style.swift"; path = "Source/Stevia+Style.swift"; sourceTree = "<group>"; };
-		5E368A82FDBB5B85391FCB3B2A87AC7E /* Stevia+FlexibleMargin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+FlexibleMargin.swift"; path = "Source/Stevia+FlexibleMargin.swift"; sourceTree = "<group>"; };
-		5E7798456BEA77660A3DAF80714C86B8 /* Stevia+Stacks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Stacks.swift"; path = "Source/Stevia+Stacks.swift"; sourceTree = "<group>"; };
-		65DAD72E5F3A219A13C782739A3736B6 /* Stevia+Alignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Alignment.swift"; path = "Source/Stevia+Alignment.swift"; sourceTree = "<group>"; };
-		72C82B755BA80319331F1F1FE47A3BB3 /* SteviaLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SteviaLayout-dummy.m"; sourceTree = "<group>"; };
-		731A4E0CBEC8C4FDD83E71E9C48A6BAD /* Stevia+LayoutAnchors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+LayoutAnchors.swift"; path = "Source/Stevia+LayoutAnchors.swift"; sourceTree = "<group>"; };
+		3AD54A9D4ADF12BEF22D2BF0C0F44D94 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/Starscream/WebSocket.swift; sourceTree = "<group>"; };
+		3AE12A61DFD98C5A78546C80A8EC5D4F /* FBLPromise+Retry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Retry.h"; path = "Sources/FBLPromises/include/FBLPromise+Retry.h"; sourceTree = "<group>"; };
+		3E281075477FEC555E6B91B369CA767B /* FBLPromises.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLPromises.h; path = Sources/FBLPromises/include/FBLPromises.h; sourceTree = "<group>"; };
+		43086D2C43B4F0775D23C50FD77DA5A5 /* FBLPromise+Validate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Validate.m"; path = "Sources/FBLPromises/FBLPromise+Validate.m"; sourceTree = "<group>"; };
+		43F55ECFCDBAE6AFCF4759385B6ABF10 /* FBLPromise+Always.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Always.h"; path = "Sources/FBLPromises/include/FBLPromise+Always.h"; sourceTree = "<group>"; };
+		4623DC701B5591698EBB1C712A2C4867 /* SSLClientCertificate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLClientCertificate.swift; path = Sources/Starscream/SSLClientCertificate.swift; sourceTree = "<group>"; };
+		4AAF76E25D1259B9B0677ACC7972B8F8 /* Promise+Validate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Validate.swift"; path = "Sources/Promises/Promise+Validate.swift"; sourceTree = "<group>"; };
+		4C853745962DE622F2E4F0EB65AD25C4 /* FBLPromise+Timeout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Timeout.h"; path = "Sources/FBLPromises/include/FBLPromise+Timeout.h"; sourceTree = "<group>"; };
+		4D1E839AB3C869E7C6BBED4F655BF3B9 /* FBLPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBLPromise.m; path = Sources/FBLPromises/FBLPromise.m; sourceTree = "<group>"; };
+		4D9CA63752B5E11E817351FF2D76D7CF /* FBLPromise+Async.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Async.h"; path = "Sources/FBLPromises/include/FBLPromise+Async.h"; sourceTree = "<group>"; };
+		4F0001AE1D23D6804686BBD781CD7BEF /* SteviaLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SteviaLayout-prefix.pch"; sourceTree = "<group>"; };
+		53F565F6A1ECE1720E80FB433AFD9338 /* Promise+Testing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Testing.swift"; path = "Sources/Promises/Promise+Testing.swift"; sourceTree = "<group>"; };
+		546CBF8ED56C5BAE6DE1B4A635AA2266 /* FBLPromise+Async.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Async.m"; path = "Sources/FBLPromises/FBLPromise+Async.m"; sourceTree = "<group>"; };
+		55CEBD5FEFEB717AF0580158DD544DE2 /* PromisesObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromisesObjC-dummy.m"; sourceTree = "<group>"; };
+		5666817F4E24BC2C0411B572BB103479 /* PromisesObjC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromisesObjC-umbrella.h"; sourceTree = "<group>"; };
+		576446D85966A068642F99D458DBEA21 /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Sources/Starscream/SSLSecurity.swift; sourceTree = "<group>"; };
+		57CC8BD3A2FB1996E38572EF43CF485D /* Stevia+FlexibleMargin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+FlexibleMargin.swift"; path = "Source/Stevia+FlexibleMargin.swift"; sourceTree = "<group>"; };
+		57E38FFF6F980CBD9E52EBF3BF7A2236 /* SteviaLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SteviaLayout.xcconfig; sourceTree = "<group>"; };
+		58270AC0BCD7AAC305424CB491E5EBE7 /* Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Starscream-Info.plist"; sourceTree = "<group>"; };
+		58A23D9C13DBF53D40C8618353AE900F /* Stevia+Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Size.swift"; path = "Source/Stevia+Size.swift"; sourceTree = "<group>"; };
+		5B2278F261C654F5438EC4A9456348D4 /* PromisesSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PromisesSwift.modulemap; sourceTree = "<group>"; };
+		5E59CC67C31F73CEE9C9D284579B7B18 /* PromisesSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromisesSwift-prefix.pch"; sourceTree = "<group>"; };
+		61DC003B4CA7094878DFE6F40312049C /* Stevia+Equation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Equation.swift"; path = "Source/Stevia+Equation.swift"; sourceTree = "<group>"; };
+		62020A4F2BCB9E86DA99881A00474E3F /* FBLPromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBLPromises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63397076FB643D53C06558B4FE6A46F7 /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/Promises/Promise.swift; sourceTree = "<group>"; };
+		636CFFFC20D4C40CE186DCA7A135292E /* Stevia+LayoutAnchors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+LayoutAnchors.swift"; path = "Source/Stevia+LayoutAnchors.swift"; sourceTree = "<group>"; };
+		63FF864D913AE0687137BC446700033A /* PromisesObjC-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PromisesObjC-Info.plist"; sourceTree = "<group>"; };
+		6514AF078583C93EBA24E202202F09B9 /* FBLPromise+Timeout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Timeout.m"; path = "Sources/FBLPromises/FBLPromise+Timeout.m"; sourceTree = "<group>"; };
+		697737F14F408922583E274BEAEAB47C /* FBLPromise+Recover.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Recover.m"; path = "Sources/FBLPromises/FBLPromise+Recover.m"; sourceTree = "<group>"; };
+		6C3C1EB539A57B6F7CBF5F5F61AEC46A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6D4F4C052AE1202E5605B08309B651FB /* Promise+Then.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Then.swift"; path = "Sources/Promises/Promise+Then.swift"; sourceTree = "<group>"; };
+		6F6D17A2581D31025F9C2EC6AD81D4E5 /* FBLPromise+Delay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Delay.h"; path = "Sources/FBLPromises/include/FBLPromise+Delay.h"; sourceTree = "<group>"; };
+		71A754BD3FBA7D0D6A4047733D4C81D0 /* FBLPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLPromise.h; path = Sources/FBLPromises/include/FBLPromise.h; sourceTree = "<group>"; };
+		7652F4E8A2F65F7C5D123992E16B3976 /* Stevia+Baselines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Baselines.swift"; path = "Source/Stevia+Baselines.swift"; sourceTree = "<group>"; };
+		77C7FCD503DBBFF4552DA9522A471BF8 /* SteviaLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SteviaLayout.modulemap; sourceTree = "<group>"; };
 		7974F4F43709FBF64A6E7578551DF70F /* Pods-Game2048-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Game2048-dummy.m"; sourceTree = "<group>"; };
-		7CC5F00C397B7C77889F12893E4A3F97 /* Stevia+DoubleDash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+DoubleDash.swift"; path = "Source/Stevia+DoubleDash.swift"; sourceTree = "<group>"; };
-		7DC9F421F902B2D0B24F25669810EF87 /* SteviaLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SteviaLayout-umbrella.h"; sourceTree = "<group>"; };
-		7FF129046859D9079ED8CC19630FCD20 /* SteviaLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SteviaLayout-prefix.pch"; sourceTree = "<group>"; };
+		7B180DDB4ABF4D0B2A0C78203D76DC3F /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		7F64B61F10005562345394104D9998E7 /* PromisesObjC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PromisesObjC.modulemap; sourceTree = "<group>"; };
+		806FA5E9A7C31BBC938870666E9D55F7 /* Stevia+Center.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Center.swift"; path = "Source/Stevia+Center.swift"; sourceTree = "<group>"; };
+		80A1E6B14684C3B013EBD0F8E00A0756 /* FBLPromise+Catch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Catch.h"; path = "Sources/FBLPromises/include/FBLPromise+Catch.h"; sourceTree = "<group>"; };
+		811A2B87A19BA024E9AAC4967117D0AA /* SwiftLint.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.xcconfig; sourceTree = "<group>"; };
+		82E149DD3194FA904EE37E8D13C78AC3 /* Stevia+Style.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Style.swift"; path = "Source/Stevia+Style.swift"; sourceTree = "<group>"; };
+		865436E0E1CD66ACCBBEFCE09E44462D /* FBLPromiseError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBLPromiseError.h; path = Sources/FBLPromises/include/FBLPromiseError.h; sourceTree = "<group>"; };
+		8737ED3E4B936E9D31A3D14D97927010 /* FBLPromise+Then.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Then.m"; path = "Sources/FBLPromises/FBLPromise+Then.m"; sourceTree = "<group>"; };
+		891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A77D8154A5B8FCCB144A04C59433402 /* Promise+Retry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Retry.swift"; path = "Sources/Promises/Promise+Retry.swift"; sourceTree = "<group>"; };
+		8B44B10B2D2CB0DE0D41FE3BAC398031 /* SteviaLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SteviaLayout-dummy.m"; sourceTree = "<group>"; };
+		913B1CB4020F289CE33FF690DE916C0A /* FBLPromise+Race.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Race.h"; path = "Sources/FBLPromises/include/FBLPromise+Race.h"; sourceTree = "<group>"; };
+		91A3D574C21BAF15099B03909A66BDB6 /* Promise+Recover.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Recover.swift"; path = "Sources/Promises/Promise+Recover.swift"; sourceTree = "<group>"; };
+		9493C0539815DF6FE15FA5CA2481A7B1 /* FBLPromiseError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBLPromiseError.m; path = Sources/FBLPromises/FBLPromiseError.m; sourceTree = "<group>"; };
+		966D703D677A281457E8515E59815E93 /* FBLPromise+Wrap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Wrap.h"; path = "Sources/FBLPromises/include/FBLPromise+Wrap.h"; sourceTree = "<group>"; };
+		996DCB2826DD6724AA0590F921A07DC5 /* Promise+Await.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Await.swift"; path = "Sources/Promises/Promise+Await.swift"; sourceTree = "<group>"; };
+		9A8000C7F75E86FEAFFD2329BD117E81 /* Promise+Timeout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Timeout.swift"; path = "Sources/Promises/Promise+Timeout.swift"; sourceTree = "<group>"; };
+		9B7F680252B562AF8F425F5662D62B58 /* FBLPromise+Reduce.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Reduce.h"; path = "Sources/FBLPromises/include/FBLPromise+Reduce.h"; sourceTree = "<group>"; };
+		9CBFE79460396B1241A35967EB9A7A20 /* Stevia+Stacks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Stacks.swift"; path = "Source/Stevia+Stacks.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1A9E2CDAC6CB8C11FC0C3A647F79371 /* PromiseError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PromiseError.swift; path = Sources/Promises/PromiseError.swift; sourceTree = "<group>"; };
+		A3EC21E02B1F8E7AAB76798F30AC2479 /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
+		A7B55895CE95754EAD869D4AA0D2284E /* Promise+Delay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Delay.swift"; path = "Sources/Promises/Promise+Delay.swift"; sourceTree = "<group>"; };
 		A7B8B7CFDB20814BD6888D3CDB47B050 /* Pods-Game2048.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Game2048.release.xcconfig"; sourceTree = "<group>"; };
-		A945DC2B66E474C51D89AE1F2C5C0A61 /* Stevia+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Operators.swift"; path = "Source/Stevia+Operators.swift"; sourceTree = "<group>"; };
-		BA61CC7C149D8ACCEFF5584D6499F703 /* Stevia+Position.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Position.swift"; path = "Source/Stevia+Position.swift"; sourceTree = "<group>"; };
-		BBF6D52C6C8681E9645E3D132C8A5172 /* Stevia+Content.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Content.swift"; path = "Source/Stevia+Content.swift"; sourceTree = "<group>"; };
-		CA9EC8329598A438C67C006252A11C55 /* Stevia+Center.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Center.swift"; path = "Source/Stevia+Center.swift"; sourceTree = "<group>"; };
-		D09444EB03E609B0E2889859176DB2F8 /* SteviaLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SteviaLayout.xcconfig; sourceTree = "<group>"; };
-		D1E05001137FCC5E35ECCF73478364F1 /* Stevia+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Hierarchy.swift"; path = "Source/Stevia+Hierarchy.swift"; sourceTree = "<group>"; };
+		A9ACEF5245DA75435E7B5DF2FA5008EF /* Promise+Catch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Catch.swift"; path = "Sources/Promises/Promise+Catch.swift"; sourceTree = "<group>"; };
+		AA467F0E5F25FABE190D429704508E95 /* Stevia+DoubleDash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+DoubleDash.swift"; path = "Source/Stevia+DoubleDash.swift"; sourceTree = "<group>"; };
+		AE292310BF24A05BD1F52A88ECA09484 /* Stevia+Position.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Position.swift"; path = "Source/Stevia+Position.swift"; sourceTree = "<group>"; };
+		B0CC3690CF0471B37C53E45AC8E70988 /* Promise+Always.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Always.swift"; path = "Sources/Promises/Promise+Always.swift"; sourceTree = "<group>"; };
+		B38BA8F635EAFBCEF96189EB16AEAB76 /* FBLPromise+Always.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Always.m"; path = "Sources/FBLPromises/FBLPromise+Always.m"; sourceTree = "<group>"; };
+		B4A3186B01C3EAA5F790D04A9EF0080A /* FBLPromise+Then.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Then.h"; path = "Sources/FBLPromises/include/FBLPromise+Then.h"; sourceTree = "<group>"; };
+		B8FD641C4BF663CB436FD929932EC714 /* FBLPromise+Testing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Testing.h"; path = "Sources/FBLPromises/include/FBLPromise+Testing.h"; sourceTree = "<group>"; };
+		BBC518E19EEF1BB98E37A8C52DA2A1A0 /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Starscream/Compression.swift; sourceTree = "<group>"; };
+		BF7C92C5DE1F92C60A680FA0792716D0 /* Promise+Wrap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Wrap.swift"; path = "Sources/Promises/Promise+Wrap.swift"; sourceTree = "<group>"; };
+		C338B7F3584389868330A1090BAC83B2 /* FBLPromise+Await.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Await.h"; path = "Sources/FBLPromises/include/FBLPromise+Await.h"; sourceTree = "<group>"; };
+		C5625EEB8AA5BE6FEBB0AF5363486D80 /* Starscream.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.xcconfig; sourceTree = "<group>"; };
+		C56C3959EF4FD073E6CD722321A9EAF9 /* Stevia+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Hierarchy.swift"; path = "Source/Stevia+Hierarchy.swift"; sourceTree = "<group>"; };
+		C5E7A930539AD19669D32F72A23C1159 /* FBLPromise+All.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+All.h"; path = "Sources/FBLPromises/include/FBLPromise+All.h"; sourceTree = "<group>"; };
+		C90B37AD60BC371B3BA0D16B3379F155 /* FBLPromise+Wrap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Wrap.m"; path = "Sources/FBLPromises/FBLPromise+Wrap.m"; sourceTree = "<group>"; };
+		CA92FC3FE233145044866F56567EE080 /* SteviaLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SteviaLayout-Info.plist"; sourceTree = "<group>"; };
+		CFB14B9932A69B836CEFB6E79277D8CF /* Stevia+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Operators.swift"; path = "Source/Stevia+Operators.swift"; sourceTree = "<group>"; };
+		D060C68732357CDE950D655B4A624746 /* FBLPromise+All.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+All.m"; path = "Sources/FBLPromises/FBLPromise+All.m"; sourceTree = "<group>"; };
+		D072238333BA51A5A59A74B4D6E6F391 /* SteviaLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SteviaLayout-umbrella.h"; sourceTree = "<group>"; };
+		D8AD393A42092EB75D5729256AB87494 /* Stevia+Alignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Alignment.swift"; path = "Source/Stevia+Alignment.swift"; sourceTree = "<group>"; };
 		DE90CE8A0DA0F3A5364FCDD4803AD3EC /* Stevia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Stevia.framework; path = SteviaLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00FFB744C9D8F3E8E7A5D35C6663CA2 /* Stevia+Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Notifications.swift"; path = "Source/Stevia+Notifications.swift"; sourceTree = "<group>"; };
+		E46CEA663DE6A77DE298F5FA86892DDA /* FBLPromise+Race.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Race.m"; path = "Sources/FBLPromises/FBLPromise+Race.m"; sourceTree = "<group>"; };
+		E49BF4EC3C719E6833BB920594F36C98 /* FBLPromise+Catch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Catch.m"; path = "Sources/FBLPromises/FBLPromise+Catch.m"; sourceTree = "<group>"; };
+		EC0B3B87DE436117AC8EB619B14659CD /* FBLPromise+Testing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Testing.m"; path = "Sources/FBLPromises/FBLPromise+Testing.m"; sourceTree = "<group>"; };
+		EFC3BE269F5308BE6BA122918873CF4C /* Promise+Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Async.swift"; path = "Sources/Promises/Promise+Async.swift"; sourceTree = "<group>"; };
+		F2DACCC491AD2A9F46FFB0CF15AB5E53 /* Stevia+Fill.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Fill.swift"; path = "Source/Stevia+Fill.swift"; sourceTree = "<group>"; };
+		F47EBA12DF440DC03A9DCCAA11B7E4CD /* FBLPromise+Recover.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Recover.h"; path = "Sources/FBLPromises/include/FBLPromise+Recover.h"; sourceTree = "<group>"; };
+		F90B022CE8937A60E8A79281EE2DFCB9 /* Promise+Reduce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Reduce.swift"; path = "Sources/Promises/Promise+Reduce.swift"; sourceTree = "<group>"; };
 		FCA4022CA69F7F584C9CD9202791E87A /* Pods-Game2048-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Game2048-Info.plist"; sourceTree = "<group>"; };
+		FCEDD28C25E152D93D6B70DC29E9C09D /* Promise+Race.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Promise+Race.swift"; path = "Sources/Promises/Promise+Race.swift"; sourceTree = "<group>"; };
+		FDB0A5BE869BD5AC783D2F46678A22DD /* PromisesSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromisesSwift-umbrella.h"; sourceTree = "<group>"; };
 		FE3A1C11135BE0576773DC9CE4C460DD /* Pods_Game2048.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Game2048.framework; path = "Pods-Game2048.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEB8AE7194EC2633BFFB07511E7DA06D /* PromisesObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromisesObjC.xcconfig; sourceTree = "<group>"; };
+		FFD706E5F10C8BB2D132241FFA20F867 /* FBLPromise+Any.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Any.h"; path = "Sources/FBLPromises/include/FBLPromise+Any.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		09206235EB9393FD6D895453F2569AF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96D67F9A7630A34944B6EAAD47F785E3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09E14091EEF6FD6434A3DF7DA4806BF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC00C30CCC09F7AC6A1F0D024882FBA8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E833FE83000DEC2EAC9C6FBCA2D5541 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FC02AB06FEF421E86AA1F2CB3FD467F /* FBLPromises.framework in Frameworks */,
+				FEEA181092C38AE2D85C271D4FA3842F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B603B988285D3F5F76B00884BC3C001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EAD8E875568F7EC8565DE569F31A296 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		716BBFF824368AEFBBA1037EB5E8D44C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,84 +397,125 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ECA00AEA9A10F09CAB75161B346DE039 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3602575192699782A0E44DBD0739A3B8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C64D0003D5B2CCCFFA90D3EFAF054DE /* SteviaLayout */ = {
+		1B200DB29EEE873D32331EAF9F1AE18B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				65DAD72E5F3A219A13C782739A3736B6 /* Stevia+Alignment.swift */,
-				42A3FA588978BAA07F1262E47DF76604 /* Stevia+Baselines.swift */,
-				CA9EC8329598A438C67C006252A11C55 /* Stevia+Center.swift */,
-				172AC566E28B3E223DBDCB888A4775C7 /* Stevia+Constraints.swift */,
-				BBF6D52C6C8681E9645E3D132C8A5172 /* Stevia+Content.swift */,
-				7CC5F00C397B7C77889F12893E4A3F97 /* Stevia+DoubleDash.swift */,
-				0FB341A7F26B35D344D5A40FD362C8E1 /* Stevia+Equation.swift */,
-				4EDB8442FA5685BFF9DA22D0E1566552 /* Stevia+Fill.swift */,
-				5E368A82FDBB5B85391FCB3B2A87AC7E /* Stevia+FlexibleMargin.swift */,
-				21BEB751E543FD53D0225D54408D3263 /* Stevia+GetConstraint.swift */,
-				D1E05001137FCC5E35ECCF73478364F1 /* Stevia+Hierarchy.swift */,
-				731A4E0CBEC8C4FDD83E71E9C48A6BAD /* Stevia+LayoutAnchors.swift */,
-				3D7ACB4D9A0C7C50B1D00C1E23BC615F /* Stevia+Notifications.swift */,
-				A945DC2B66E474C51D89AE1F2C5C0A61 /* Stevia+Operators.swift */,
-				2CB81FE4203581390EE5190905987047 /* Stevia+Percentage.swift */,
-				BA61CC7C149D8ACCEFF5584D6499F703 /* Stevia+Position.swift */,
-				58016009FBE343F7EE881BBE943431B4 /* Stevia+Size.swift */,
-				5E7798456BEA77660A3DAF80714C86B8 /* Stevia+Stacks.swift */,
-				5BC50A3B8458A396035DFC2C997E6719 /* Stevia+Style.swift */,
-				2DFF33C8F43F74918B64978D5CCC4B45 /* Support Files */,
-			);
-			name = SteviaLayout;
-			path = SteviaLayout;
-			sourceTree = "<group>";
-		};
-		2DFF33C8F43F74918B64978D5CCC4B45 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				36591793297D4851AAE0E17C6D8D9FD2 /* SteviaLayout.modulemap */,
-				D09444EB03E609B0E2889859176DB2F8 /* SteviaLayout.xcconfig */,
-				72C82B755BA80319331F1F1FE47A3BB3 /* SteviaLayout-dummy.m */,
-				3AD3BB2F2B3D16E6242C538EE4B43235 /* SteviaLayout-Info.plist */,
-				7FF129046859D9079ED8CC19630FCD20 /* SteviaLayout-prefix.pch */,
-				7DC9F421F902B2D0B24F25669810EF87 /* SteviaLayout-umbrella.h */,
+				77C7FCD503DBBFF4552DA9522A471BF8 /* SteviaLayout.modulemap */,
+				57E38FFF6F980CBD9E52EBF3BF7A2236 /* SteviaLayout.xcconfig */,
+				8B44B10B2D2CB0DE0D41FE3BAC398031 /* SteviaLayout-dummy.m */,
+				CA92FC3FE233145044866F56567EE080 /* SteviaLayout-Info.plist */,
+				4F0001AE1D23D6804686BBD781CD7BEF /* SteviaLayout-prefix.pch */,
+				D072238333BA51A5A59A74B4D6E6F391 /* SteviaLayout-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SteviaLayout";
 			sourceTree = "<group>";
 		};
-		31715C0861DFA2F0B9705F254E269239 /* Support Files */ = {
+		2D7219444627D2D5238868A4CCD5704D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				175160FA03C7F96B575AC3D7343B1E77 /* SwiftLint.xcconfig */,
+				62020A4F2BCB9E86DA99881A00474E3F /* FBLPromises.framework */,
+				901C6573DC7352F89FD5AC0EC3EA7C88 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4316B56082F001F8BD02C5CE79CAB081 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7997E8749C5E0025B4F8D5414DEB29CB /* PromisesObjC */,
+				A6648084C2B635C83FE2DCC2262083DC /* PromisesSwift */,
+				B0CCFB624C948E58ED87475E56CA86F9 /* Starscream */,
+				B9466C58F7C23B0B49B70BE322567D38 /* SteviaLayout */,
+				AF16C245C3B0CAD9CA204874E698F532 /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4BC9628013C54A79D4322C1FBD6F44B0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E21EC9A580AC87911CEF9DBD7192222 /* Starscream.modulemap */,
+				C5625EEB8AA5BE6FEBB0AF5363486D80 /* Starscream.xcconfig */,
+				A3EC21E02B1F8E7AAB76798F30AC2479 /* Starscream-dummy.m */,
+				58270AC0BCD7AAC305424CB491E5EBE7 /* Starscream-Info.plist */,
+				7B180DDB4ABF4D0B2A0C78203D76DC3F /* Starscream-prefix.pch */,
+				3500BD45682812ABC11EF424E535935B /* Starscream-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwiftLint";
+			path = "../Target Support Files/Starscream";
 			sourceTree = "<group>";
 		};
-		43203A11AE35690C2A94E45F8EEFE605 /* SwiftLint */ = {
+		5F46870DD8029B950A5AF4138FA86E37 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				31715C0861DFA2F0B9705F254E269239 /* Support Files */,
-			);
-			name = SwiftLint;
-			path = SwiftLint;
-			sourceTree = "<group>";
-		};
-		4B3E5C6A5478F64ACC2ABEA67C421B1F /* Products */ = {
-			isa = PBXGroup;
-			children = (
+				3347A1AB6546F0A3977529B8F199DC41 /* FBLPromises.framework */,
 				FE3A1C11135BE0576773DC9CE4C460DD /* Pods_Game2048.framework */,
+				379E5319BC6B4AE5613DFF7EEEAA6905 /* Promises.framework */,
+				891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */,
 				DE90CE8A0DA0F3A5364FCDD4803AD3EC /* Stevia.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7997E8749C5E0025B4F8D5414DEB29CB /* PromisesObjC */ = {
+			isa = PBXGroup;
+			children = (
+				71A754BD3FBA7D0D6A4047733D4C81D0 /* FBLPromise.h */,
+				4D1E839AB3C869E7C6BBED4F655BF3B9 /* FBLPromise.m */,
+				C5E7A930539AD19669D32F72A23C1159 /* FBLPromise+All.h */,
+				D060C68732357CDE950D655B4A624746 /* FBLPromise+All.m */,
+				43F55ECFCDBAE6AFCF4759385B6ABF10 /* FBLPromise+Always.h */,
+				B38BA8F635EAFBCEF96189EB16AEAB76 /* FBLPromise+Always.m */,
+				FFD706E5F10C8BB2D132241FFA20F867 /* FBLPromise+Any.h */,
+				2D8DB82F87A62BBAAC1131F55E73BBC6 /* FBLPromise+Any.m */,
+				4D9CA63752B5E11E817351FF2D76D7CF /* FBLPromise+Async.h */,
+				546CBF8ED56C5BAE6DE1B4A635AA2266 /* FBLPromise+Async.m */,
+				C338B7F3584389868330A1090BAC83B2 /* FBLPromise+Await.h */,
+				2521BC31E1BD8CC71AAEDBA9CEDF138C /* FBLPromise+Await.m */,
+				80A1E6B14684C3B013EBD0F8E00A0756 /* FBLPromise+Catch.h */,
+				E49BF4EC3C719E6833BB920594F36C98 /* FBLPromise+Catch.m */,
+				6F6D17A2581D31025F9C2EC6AD81D4E5 /* FBLPromise+Delay.h */,
+				2AE3C452072FC643EBBF95EEE56AF4AB /* FBLPromise+Delay.m */,
+				02E51AD726ED8D86AE30FDC52ED62244 /* FBLPromise+Do.h */,
+				2DC5CA68D854267A731BB14FEE3EB588 /* FBLPromise+Do.m */,
+				913B1CB4020F289CE33FF690DE916C0A /* FBLPromise+Race.h */,
+				E46CEA663DE6A77DE298F5FA86892DDA /* FBLPromise+Race.m */,
+				F47EBA12DF440DC03A9DCCAA11B7E4CD /* FBLPromise+Recover.h */,
+				697737F14F408922583E274BEAEAB47C /* FBLPromise+Recover.m */,
+				9B7F680252B562AF8F425F5662D62B58 /* FBLPromise+Reduce.h */,
+				13FEE97728F3D316C3F365A14AB2CD28 /* FBLPromise+Reduce.m */,
+				3AE12A61DFD98C5A78546C80A8EC5D4F /* FBLPromise+Retry.h */,
+				1A28E221BE3E9B693D42FFD6A0CD97F6 /* FBLPromise+Retry.m */,
+				B8FD641C4BF663CB436FD929932EC714 /* FBLPromise+Testing.h */,
+				EC0B3B87DE436117AC8EB619B14659CD /* FBLPromise+Testing.m */,
+				B4A3186B01C3EAA5F790D04A9EF0080A /* FBLPromise+Then.h */,
+				8737ED3E4B936E9D31A3D14D97927010 /* FBLPromise+Then.m */,
+				4C853745962DE622F2E4F0EB65AD25C4 /* FBLPromise+Timeout.h */,
+				6514AF078583C93EBA24E202202F09B9 /* FBLPromise+Timeout.m */,
+				0189ACBBD7BDE824F7CD5B888B7AD08F /* FBLPromise+Validate.h */,
+				43086D2C43B4F0775D23C50FD77DA5A5 /* FBLPromise+Validate.m */,
+				966D703D677A281457E8515E59815E93 /* FBLPromise+Wrap.h */,
+				C90B37AD60BC371B3BA0D16B3379F155 /* FBLPromise+Wrap.m */,
+				865436E0E1CD66ACCBBEFCE09E44462D /* FBLPromiseError.h */,
+				9493C0539815DF6FE15FA5CA2481A7B1 /* FBLPromiseError.m */,
+				10E0FD42674B60D88FD32A531C489D3D /* FBLPromisePrivate.h */,
+				3E281075477FEC555E6B91B369CA767B /* FBLPromises.h */,
+				FB5237E45A7364CC59A2C61A4D9AE890 /* Support Files */,
+			);
+			name = PromisesObjC;
+			path = PromisesObjC;
+			sourceTree = "<group>";
+		};
+		901C6573DC7352F89FD5AC0EC3EA7C88 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6C3C1EB539A57B6F7CBF5F5F61AEC46A /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		A534F5B3F016EE1290469180BD931823 /* Pods-Game2048 */ = {
@@ -211,31 +535,102 @@
 			path = "Target Support Files/Pods-Game2048";
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		A6648084C2B635C83FE2DCC2262083DC /* PromisesSwift */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				63397076FB643D53C06558B4FE6A46F7 /* Promise.swift */,
+				3721C747EDB96E66F07B395587D08E3E /* Promise+All.swift */,
+				B0CC3690CF0471B37C53E45AC8E70988 /* Promise+Always.swift */,
+				2DA1FD13631E5E8AC6316DB3E43B29BE /* Promise+Any.swift */,
+				EFC3BE269F5308BE6BA122918873CF4C /* Promise+Async.swift */,
+				996DCB2826DD6724AA0590F921A07DC5 /* Promise+Await.swift */,
+				A9ACEF5245DA75435E7B5DF2FA5008EF /* Promise+Catch.swift */,
+				A7B55895CE95754EAD869D4AA0D2284E /* Promise+Delay.swift */,
+				28207147AC9ACCF45A69FF9B42815A6B /* Promise+Do.swift */,
+				FCEDD28C25E152D93D6B70DC29E9C09D /* Promise+Race.swift */,
+				91A3D574C21BAF15099B03909A66BDB6 /* Promise+Recover.swift */,
+				F90B022CE8937A60E8A79281EE2DFCB9 /* Promise+Reduce.swift */,
+				8A77D8154A5B8FCCB144A04C59433402 /* Promise+Retry.swift */,
+				53F565F6A1ECE1720E80FB433AFD9338 /* Promise+Testing.swift */,
+				6D4F4C052AE1202E5605B08309B651FB /* Promise+Then.swift */,
+				9A8000C7F75E86FEAFFD2329BD117E81 /* Promise+Timeout.swift */,
+				4AAF76E25D1259B9B0677ACC7972B8F8 /* Promise+Validate.swift */,
+				BF7C92C5DE1F92C60A680FA0792716D0 /* Promise+Wrap.swift */,
+				A1A9E2CDAC6CB8C11FC0C3A647F79371 /* PromiseError.swift */,
+				F172482D7186FD5AA40112A192CB87F3 /* Support Files */,
 			);
-			name = iOS;
+			name = PromisesSwift;
+			path = PromisesSwift;
+			sourceTree = "<group>";
+		};
+		AF16C245C3B0CAD9CA204874E698F532 /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				DD966D1DC8464A47FA3A173CC8E9B057 /* Support Files */,
+			);
+			name = SwiftLint;
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		B0CCFB624C948E58ED87475E56CA86F9 /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				BBC518E19EEF1BB98E37A8C52DA2A1A0 /* Compression.swift */,
+				4623DC701B5591698EBB1C712A2C4867 /* SSLClientCertificate.swift */,
+				576446D85966A068642F99D458DBEA21 /* SSLSecurity.swift */,
+				3AD54A9D4ADF12BEF22D2BF0C0F44D94 /* WebSocket.swift */,
+				4BC9628013C54A79D4322C1FBD6F44B0 /* Support Files */,
+			);
+			name = Starscream;
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+		B9466C58F7C23B0B49B70BE322567D38 /* SteviaLayout */ = {
+			isa = PBXGroup;
+			children = (
+				D8AD393A42092EB75D5729256AB87494 /* Stevia+Alignment.swift */,
+				7652F4E8A2F65F7C5D123992E16B3976 /* Stevia+Baselines.swift */,
+				806FA5E9A7C31BBC938870666E9D55F7 /* Stevia+Center.swift */,
+				29AF14F0BC43E9AE1D839A37026680D4 /* Stevia+Constraints.swift */,
+				2A96434880734E9B4B3E9DFE6B328F0C /* Stevia+Content.swift */,
+				AA467F0E5F25FABE190D429704508E95 /* Stevia+DoubleDash.swift */,
+				61DC003B4CA7094878DFE6F40312049C /* Stevia+Equation.swift */,
+				F2DACCC491AD2A9F46FFB0CF15AB5E53 /* Stevia+Fill.swift */,
+				57CC8BD3A2FB1996E38572EF43CF485D /* Stevia+FlexibleMargin.swift */,
+				2A031CD2E5087C6004960E500B13A6FA /* Stevia+GetConstraint.swift */,
+				C56C3959EF4FD073E6CD722321A9EAF9 /* Stevia+Hierarchy.swift */,
+				636CFFFC20D4C40CE186DCA7A135292E /* Stevia+LayoutAnchors.swift */,
+				E00FFB744C9D8F3E8E7A5D35C6663CA2 /* Stevia+Notifications.swift */,
+				CFB14B9932A69B836CEFB6E79277D8CF /* Stevia+Operators.swift */,
+				01DC9B0EB4C6B5ACD3DA5E7030433B38 /* Stevia+Percentage.swift */,
+				AE292310BF24A05BD1F52A88ECA09484 /* Stevia+Position.swift */,
+				58A23D9C13DBF53D40C8618353AE900F /* Stevia+Size.swift */,
+				9CBFE79460396B1241A35967EB9A7A20 /* Stevia+Stacks.swift */,
+				82E149DD3194FA904EE37E8D13C78AC3 /* Stevia+Style.swift */,
+				1B200DB29EEE873D32331EAF9F1AE18B /* Support Files */,
+			);
+			name = SteviaLayout;
+			path = SteviaLayout;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				F45329A028FCD0E4312134CCA0966A31 /* Pods */,
-				4B3E5C6A5478F64ACC2ABEA67C421B1F /* Products */,
+				2D7219444627D2D5238868A4CCD5704D /* Frameworks */,
+				4316B56082F001F8BD02C5CE79CAB081 /* Pods */,
+				5F46870DD8029B950A5AF4138FA86E37 /* Products */,
 				DEF9EC12694978C57AE18215256F558C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		DD966D1DC8464A47FA3A173CC8E9B057 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				811A2B87A19BA024E9AAC4967117D0AA /* SwiftLint.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
 			sourceTree = "<group>";
 		};
 		DEF9EC12694978C57AE18215256F558C /* Targets Support Files */ = {
@@ -246,23 +641,57 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F45329A028FCD0E4312134CCA0966A31 /* Pods */ = {
+		F172482D7186FD5AA40112A192CB87F3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0C64D0003D5B2CCCFFA90D3EFAF054DE /* SteviaLayout */,
-				43203A11AE35690C2A94E45F8EEFE605 /* SwiftLint */,
+				5B2278F261C654F5438EC4A9456348D4 /* PromisesSwift.modulemap */,
+				112EAEF29F716F414DB865367F49E38F /* PromisesSwift.xcconfig */,
+				11E2E426AEAB606D43F54B06989033D7 /* PromisesSwift-dummy.m */,
+				0F08DA1FD3B11C30A38A7296DA69B9A0 /* PromisesSwift-Info.plist */,
+				5E59CC67C31F73CEE9C9D284579B7B18 /* PromisesSwift-prefix.pch */,
+				FDB0A5BE869BD5AC783D2F46678A22DD /* PromisesSwift-umbrella.h */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/PromisesSwift";
+			sourceTree = "<group>";
+		};
+		FB5237E45A7364CC59A2C61A4D9AE890 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F64B61F10005562345394104D9998E7 /* PromisesObjC.modulemap */,
+				FEB8AE7194EC2633BFFB07511E7DA06D /* PromisesObjC.xcconfig */,
+				55CEBD5FEFEB717AF0580158DD544DE2 /* PromisesObjC-dummy.m */,
+				63FF864D913AE0687137BC446700033A /* PromisesObjC-Info.plist */,
+				5666817F4E24BC2C0411B572BB103479 /* PromisesObjC-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PromisesObjC";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7C4C5D3C80D96FC2F9C3B6139DEF46B5 /* Headers */ = {
+		31FEC521B4D09642E4E1662FC2D32604 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5223F6E70ED0B80BD9714D76EC69FC84 /* Pods-Game2048-umbrella.h in Headers */,
+				C10269A688159EA41BC61D5436096DBC /* PromisesSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABD37AF9B9F78580D159AE761C456202 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4A6283FDFA04E3A7B6FD0C13B6FEF32 /* Starscream-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8F82A93CAE7BD0A350E7054B61B960F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE979F69108ED81C78A900628C35385 /* Pods-Game2048-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,27 +703,116 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD88429CEC3A4B3725FED916C9F3B756 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E89DF29C074E90D42E67D3FD553F8CD3 /* FBLPromise+All.h in Headers */,
+				0F0E0F1224D5B962BC5D538C3D3CCD18 /* FBLPromise+Always.h in Headers */,
+				2B02541E74927277F07513CF78122EFB /* FBLPromise+Any.h in Headers */,
+				28C4507C62CAB7152878754F4B4C2CC8 /* FBLPromise+Async.h in Headers */,
+				68785DC7345AE2FFC62CB57EADDE4473 /* FBLPromise+Await.h in Headers */,
+				9EFDED082CBF3525EFCC4A56CE41B14C /* FBLPromise+Catch.h in Headers */,
+				708AAE8AF48E758352B8CDA6D30B9CF5 /* FBLPromise+Delay.h in Headers */,
+				891C69433F0A882A9D132FFEF65E6B53 /* FBLPromise+Do.h in Headers */,
+				BFD9A274235398CE79122A177567D750 /* FBLPromise+Race.h in Headers */,
+				D46EDF87FDC9FDF3E18FC9ED132600B8 /* FBLPromise+Recover.h in Headers */,
+				AD807404332D0020A308C0644B0ACA75 /* FBLPromise+Reduce.h in Headers */,
+				20D766DCB9164F883B3430A88C5B6BC1 /* FBLPromise+Retry.h in Headers */,
+				B674DB2C16A11C63F15C08342FB4EC35 /* FBLPromise+Testing.h in Headers */,
+				7EEE47D28CA1C1480BE607B85B2FFD7C /* FBLPromise+Then.h in Headers */,
+				286CDD2DD9246B82386B25B9885F2CD3 /* FBLPromise+Timeout.h in Headers */,
+				7F62AF633793D6AB5E4330EE29CC4C6D /* FBLPromise+Validate.h in Headers */,
+				82DE2772D105360C4508B66D84C65C05 /* FBLPromise+Wrap.h in Headers */,
+				6CF730A59E41E5B26907B75BAA3F5B5E /* FBLPromise.h in Headers */,
+				5B357C2B8A631BB75CAA1F3700E7A31E /* FBLPromiseError.h in Headers */,
+				7414FF2E6588994512C30D41AA4A9836 /* FBLPromisePrivate.h in Headers */,
+				5C8FF72099514B9E1EF9263C9FACBC8A /* FBLPromises.h in Headers */,
+				08F45086582B1AF9CC6B5DBEE782F328 /* PromisesObjC-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8ABF2EA14ACCDE6539E335C015CD84E9 /* Pods-Game2048 */ = {
+		2BBF7206D7FAC92C82A042A99C4A98F8 /* PromisesObjC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CFB640DDC7F4FCEF413C485F447C07A8 /* Build configuration list for PBXNativeTarget "Pods-Game2048" */;
+			buildConfigurationList = 04A8FB942968EA312EDB2DC742664B18 /* Build configuration list for PBXNativeTarget "PromisesObjC" */;
 			buildPhases = (
-				7C4C5D3C80D96FC2F9C3B6139DEF46B5 /* Headers */,
-				10253ECB57970A8B75E87FD09DA0F8D4 /* Sources */,
-				ECA00AEA9A10F09CAB75161B346DE039 /* Frameworks */,
-				C9C5785FB292CA4E8EF67352924FC6BD /* Resources */,
+				FD88429CEC3A4B3725FED916C9F3B756 /* Headers */,
+				6E8BA44989F41AD08357EB179B26A8D3 /* Sources */,
+				1B603B988285D3F5F76B00884BC3C001 /* Frameworks */,
+				AFCA1973E5E36120AE403A237110D352 /* Resources */,
+				7030B4E1A7C8F71BC1080052A86D1B31 /* Copy . Public Headers */,
+				9A6D0656242CA792EED56D6D0B026DC9 /* Copy . Private Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				509BCF0AE5B40DCE1A55B6B3EB5F58BE /* PBXTargetDependency */,
-				0EED1F1AF7FF7C936F122502C3DE0412 /* PBXTargetDependency */,
+			);
+			name = PromisesObjC;
+			productName = PromisesObjC;
+			productReference = 3347A1AB6546F0A3977529B8F199DC41 /* FBLPromises.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8ABF2EA14ACCDE6539E335C015CD84E9 /* Pods-Game2048 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EEECBFA66C4F91C3638C5A2EA791258 /* Build configuration list for PBXNativeTarget "Pods-Game2048" */;
+			buildPhases = (
+				B8F82A93CAE7BD0A350E7054B61B960F /* Headers */,
+				927A869563F5B12EEEAD28AB38AF7041 /* Sources */,
+				09E14091EEF6FD6434A3DF7DA4806BF1 /* Frameworks */,
+				8259EC56621BBBC6DBF17727A80CAB27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C90FB51284EACFC3B74041B8F09B5E9F /* PBXTargetDependency */,
+				76847C4C64EA8C4387F0043F216526B9 /* PBXTargetDependency */,
+				C779344DABDF963E18FB7972988A8B0F /* PBXTargetDependency */,
+				2341FD7D6691805C13D65F1818018F6D /* PBXTargetDependency */,
+				E0DA7941E5359CED3964D133A9F1A7D5 /* PBXTargetDependency */,
 			);
 			name = "Pods-Game2048";
 			productName = "Pods-Game2048";
 			productReference = FE3A1C11135BE0576773DC9CE4C460DD /* Pods_Game2048.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED5C15C705AB67930733A7E237A0A33A /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildPhases = (
+				ABD37AF9B9F78580D159AE761C456202 /* Headers */,
+				621EE447A1C117BDCD418F5DE070FD3C /* Sources */,
+				09206235EB9393FD6D895453F2569AF9 /* Frameworks */,
+				BE174469BA3F43D1B5CE60520CA93EB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starscream;
+			productName = Starscream;
+			productReference = 891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A979F9D3632CD5F2F7518F9A362CBAE3 /* PromisesSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA16B8954D73698E5D90EA478D253901 /* Build configuration list for PBXNativeTarget "PromisesSwift" */;
+			buildPhases = (
+				31FEC521B4D09642E4E1662FC2D32604 /* Headers */,
+				1FC19F3B6CA1E1EE7B1BD0903B25DDEE /* Sources */,
+				0E833FE83000DEC2EAC9C6FBCA2D5541 /* Frameworks */,
+				6E971FF097B4BF4450E03FE9EB0F8E39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69FF9BD5E8044A21E44C8E12AE79D26B /* PBXTargetDependency */,
+			);
+			name = PromisesSwift;
+			productName = PromisesSwift;
+			productReference = 379E5319BC6B4AE5613DFF7EEEAA6905 /* Promises.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CF263AB023E40C4315ED4A97C6D7829F /* SteviaLayout */ = {
@@ -333,11 +851,14 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 4B3E5C6A5478F64ACC2ABEA67C421B1F /* Products */;
+			productRefGroup = 5F46870DD8029B950A5AF4138FA86E37 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				8ABF2EA14ACCDE6539E335C015CD84E9 /* Pods-Game2048 */,
+				2BBF7206D7FAC92C82A042A99C4A98F8 /* PromisesObjC */,
+				A979F9D3632CD5F2F7518F9A362CBAE3 /* PromisesSwift */,
+				9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */,
 				CF263AB023E40C4315ED4A97C6D7829F /* SteviaLayout */,
 				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
 			);
@@ -345,6 +866,20 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6E971FF097B4BF4450E03FE9EB0F8E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8259EC56621BBBC6DBF17727A80CAB27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		939AB8B2B8B549019D4598DD0D6314D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -352,7 +887,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9C5785FB292CA4E8EF67352924FC6BD /* Resources */ = {
+		AFCA1973E5E36120AE403A237110D352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE174469BA3F43D1B5CE60520CA93EB3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -362,11 +904,77 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		10253ECB57970A8B75E87FD09DA0F8D4 /* Sources */ = {
+		1FC19F3B6CA1E1EE7B1BD0903B25DDEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82135A77E07D48BDD75C3629E7863E27 /* Pods-Game2048-dummy.m in Sources */,
+				ABE464E60091D4034142D19E58C497EF /* Promise+All.swift in Sources */,
+				D71B795B906375F8DDF7CA8016CCE09D /* Promise+Always.swift in Sources */,
+				0410D02A7738D0DD275563C7799FF250 /* Promise+Any.swift in Sources */,
+				BF1AE495B7D0127034B477EB51ED8AD4 /* Promise+Async.swift in Sources */,
+				24D9F5C1A2BC94B5E4C0A26DEE0D985B /* Promise+Await.swift in Sources */,
+				673FEA8EC0DF3439F91709B66519FBC8 /* Promise+Catch.swift in Sources */,
+				4084890A23CEC31F7A200F8380EB1AFC /* Promise+Delay.swift in Sources */,
+				7BDD8E22E4919CEC1367D8885D1D7E40 /* Promise+Do.swift in Sources */,
+				D50FDE9473F24A0D19FAE69B815BBEA3 /* Promise+Race.swift in Sources */,
+				7432A426D25A902E6943764D7BF2E347 /* Promise+Recover.swift in Sources */,
+				118B9415E864001C6179A0C45CED2C5F /* Promise+Reduce.swift in Sources */,
+				0326CBB5ADC63ACD09EDB395D40E4ACE /* Promise+Retry.swift in Sources */,
+				CD283B13E2ACBACD129668282923270B /* Promise+Testing.swift in Sources */,
+				D6756C287309D6ED1C26CD4E3684B455 /* Promise+Then.swift in Sources */,
+				AE238DD5746780C64783F7BED7527BDC /* Promise+Timeout.swift in Sources */,
+				C0CA325453A545B8F01ED84D32090DDD /* Promise+Validate.swift in Sources */,
+				C6700A734BA724F44CCACB4493579A4A /* Promise+Wrap.swift in Sources */,
+				333A42A84C4757CE1D1D7E5434799E98 /* Promise.swift in Sources */,
+				5CE828E841EBAA5C2D382A43D4444598 /* PromiseError.swift in Sources */,
+				44FCF98E0E654DDA847B33B0CA28F526 /* PromisesSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		621EE447A1C117BDCD418F5DE070FD3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068E5963381B58D7D8CD321462F567ED /* Compression.swift in Sources */,
+				1627E6FA0453D6DB472BA444F1D32AE7 /* SSLClientCertificate.swift in Sources */,
+				8B3350D96B15B975184C8EE0819F9623 /* SSLSecurity.swift in Sources */,
+				294D61E8A195B6A1F6AEDCF0F73599A5 /* Starscream-dummy.m in Sources */,
+				C02D9FEB295BDA1359D2F52C80F8E75A /* WebSocket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E8BA44989F41AD08357EB179B26A8D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				348A72CBE6B5D3CD3B6FCB9284A7CB96 /* FBLPromise+All.m in Sources */,
+				700E20AD17E9ACE955659E30F3D113E4 /* FBLPromise+Always.m in Sources */,
+				A35805D1C0A1499FEA9E78A05491EFCA /* FBLPromise+Any.m in Sources */,
+				CA3220FD7932EA752D6934516DD248D3 /* FBLPromise+Async.m in Sources */,
+				F0DF09C7D785E312A7338A6FA50BB8ED /* FBLPromise+Await.m in Sources */,
+				9B1B90C996B9A3A1DD9274FA523A4CE5 /* FBLPromise+Catch.m in Sources */,
+				0A8E956756DCE2131B1A1335E6AF28B2 /* FBLPromise+Delay.m in Sources */,
+				9030750E491524F089268BA02A167008 /* FBLPromise+Do.m in Sources */,
+				FC2850237AD025421E9F0F4C1B6E6ADB /* FBLPromise+Race.m in Sources */,
+				9BF4EDAEB189A612EFDFFBB929C3EE7D /* FBLPromise+Recover.m in Sources */,
+				1FFF43186DD6499BC33C595DF27718B8 /* FBLPromise+Reduce.m in Sources */,
+				B54DCBE3035A3D7D80CF7FEE88B76551 /* FBLPromise+Retry.m in Sources */,
+				D9AB246F26E09667B0156A88D4D10954 /* FBLPromise+Testing.m in Sources */,
+				32D8F65D82085E2221A671818B0EBF2C /* FBLPromise+Then.m in Sources */,
+				A5BE655282AA0B247B65DE88EDE0B1FB /* FBLPromise+Timeout.m in Sources */,
+				3170239393A057F80A512FE4BE61211B /* FBLPromise+Validate.m in Sources */,
+				3520B1EB07B684F4F3CB13526E1F1BE2 /* FBLPromise+Wrap.m in Sources */,
+				FAA631E6D3DDE70624DF19C0B220C6BB /* FBLPromise.m in Sources */,
+				F6E1BD2A5500D310F70D7AD2CA4738BC /* FBLPromiseError.m in Sources */,
+				03B801721CD360533ACEE638044E61C6 /* PromisesObjC-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		927A869563F5B12EEEAD28AB38AF7041 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C781B818EB7C48260639B896B1AC9566 /* Pods-Game2048-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,22 +1008,409 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0EED1F1AF7FF7C936F122502C3DE0412 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftLint;
-			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
-			targetProxy = 2613763A4091D1048520EBBAF2A199EC /* PBXContainerItemProxy */;
-		};
-		509BCF0AE5B40DCE1A55B6B3EB5F58BE /* PBXTargetDependency */ = {
+		2341FD7D6691805C13D65F1818018F6D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SteviaLayout;
 			target = CF263AB023E40C4315ED4A97C6D7829F /* SteviaLayout */;
-			targetProxy = 3E7817E11887778BCA8843CFB60CE3E0 /* PBXContainerItemProxy */;
+			targetProxy = A108E0032F128AD14BC6942CB06E17B0 /* PBXContainerItemProxy */;
+		};
+		69FF9BD5E8044A21E44C8E12AE79D26B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PromisesObjC;
+			target = 2BBF7206D7FAC92C82A042A99C4A98F8 /* PromisesObjC */;
+			targetProxy = 2ABAFB7D24E0AECAAADF7504D31F208F /* PBXContainerItemProxy */;
+		};
+		76847C4C64EA8C4387F0043F216526B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PromisesSwift;
+			target = A979F9D3632CD5F2F7518F9A362CBAE3 /* PromisesSwift */;
+			targetProxy = A4DCB933F92A32A296FA0B5A2C8648FA /* PBXContainerItemProxy */;
+		};
+		C779344DABDF963E18FB7972988A8B0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = 526B127C42F7F2287BF58F43BAAA8D3C /* PBXContainerItemProxy */;
+		};
+		C90FB51284EACFC3B74041B8F09B5E9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PromisesObjC;
+			target = 2BBF7206D7FAC92C82A042A99C4A98F8 /* PromisesObjC */;
+			targetProxy = DC82ED5DDDDBE8E426113D1718842816 /* PBXContainerItemProxy */;
+		};
+		E0DA7941E5359CED3964D133A9F1A7D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = C97C0B15566822BFC822C0BC1C4B6F60 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07965E47D66731CF2ED9546924380151 /* Debug */ = {
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		36CC4F6F010E6D40A4028920E7ED722B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7B8B7CFDB20814BD6888D3CDB47B050 /* Pods-Game2048.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Game2048/Pods-Game2048-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Game2048/Pods-Game2048.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5B126DDE38F621D776C9CAEF677029F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEB8AE7194EC2633BFFB07511E7DA06D /* PromisesObjC.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/PromisesObjC/PromisesObjC-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PromisesObjC/PromisesObjC.modulemap";
+				PRODUCT_MODULE_NAME = FBLPromises;
+				PRODUCT_NAME = FBLPromises;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		73968A14EF0365E654FA09AC14885BA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5625EEB8AA5BE6FEBB0AF5363486D80 /* Starscream.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7ADFD9340AC9E710B46B3546AA90185D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEB8AE7194EC2633BFFB07511E7DA06D /* PromisesObjC.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/PromisesObjC/PromisesObjC-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PromisesObjC/PromisesObjC.modulemap";
+				PRODUCT_MODULE_NAME = FBLPromises;
+				PRODUCT_NAME = FBLPromises;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7C0668AB3AEA46F2D33B4DD4322F041D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5625EEB8AA5BE6FEBB0AF5363486D80 /* Starscream.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84D7C4574E8F0F3095623F0E06F5B402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 811A2B87A19BA024E9AAC4967117D0AA /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F7F8A673AF1C3E6758D16629C81DD35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 112EAEF29F716F414DB865367F49E38F /* PromisesSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PromisesSwift/PromisesSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PromisesSwift/PromisesSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PromisesSwift/PromisesSwift.modulemap";
+				PRODUCT_MODULE_NAME = Promises;
+				PRODUCT_NAME = Promises;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B00502FBF71432912952A769EA506D96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 112EAEF29F716F414DB865367F49E38F /* PromisesSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PromisesSwift/PromisesSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PromisesSwift/PromisesSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PromisesSwift/PromisesSwift.modulemap";
+				PRODUCT_MODULE_NAME = Promises;
+				PRODUCT_NAME = Promises;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B85272EB1AAADEB049204B8582D72B7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57E38FFF6F980CBD9E52EBF3BF7A2236 /* SteviaLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SteviaLayout/SteviaLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SteviaLayout/SteviaLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SteviaLayout/SteviaLayout.modulemap";
+				PRODUCT_MODULE_NAME = Stevia;
+				PRODUCT_NAME = Stevia;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD22BE1E65647B2F123EF3B2AFE05098 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 27BA15B75A5E9FCA09B659CCC787C06F /* Pods-Game2048.debug.xcconfig */;
 			buildSettings = {
@@ -432,7 +1427,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Game2048/Pods-Game2048-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,7 +1448,58 @@
 			};
 			name = Debug;
 		};
-		131356BE54884448CA49C07BEDF4BB2A /* Debug */ = {
+		DEED47E09AF743F48544C1C4FEADEF47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 811A2B87A19BA024E9AAC4967117D0AA /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC7450C33BFE252075BCA8F4BCE97E2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57E38FFF6F980CBD9E52EBF3BF7A2236 /* SteviaLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SteviaLayout/SteviaLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SteviaLayout/SteviaLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SteviaLayout/SteviaLayout.modulemap";
+				PRODUCT_MODULE_NAME = Stevia;
+				PRODUCT_NAME = Stevia;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -504,7 +1550,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -517,212 +1563,18 @@
 			};
 			name = Debug;
 		};
-		6EC9DCA79855530A217DA84A9C87DCC7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7B8B7CFDB20814BD6888D3CDB47B050 /* Pods-Game2048.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Game2048/Pods-Game2048-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Game2048/Pods-Game2048.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		84D7C4574E8F0F3095623F0E06F5B402 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 175160FA03C7F96B575AC3D7343B1E77 /* SwiftLint.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		B85272EB1AAADEB049204B8582D72B7E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D09444EB03E609B0E2889859176DB2F8 /* SteviaLayout.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SteviaLayout/SteviaLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SteviaLayout/SteviaLayout-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SteviaLayout/SteviaLayout.modulemap";
-				PRODUCT_MODULE_NAME = Stevia;
-				PRODUCT_NAME = Stevia;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DEED47E09AF743F48544C1C4FEADEF47 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 175160FA03C7F96B575AC3D7343B1E77 /* SwiftLint.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		EC7450C33BFE252075BCA8F4BCE97E2E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D09444EB03E609B0E2889859176DB2F8 /* SteviaLayout.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SteviaLayout/SteviaLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SteviaLayout/SteviaLayout-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SteviaLayout/SteviaLayout.modulemap";
-				PRODUCT_MODULE_NAME = Stevia;
-				PRODUCT_NAME = Stevia;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F090CD07A80273D5A73C8EA19224ADDB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		04A8FB942968EA312EDB2DC742664B18 /* Build configuration list for PBXNativeTarget "PromisesObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ADFD9340AC9E710B46B3546AA90185D /* Debug */,
+				5B126DDE38F621D776C9CAEF677029F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		04EBD7E73BEAEA15A04E154586923DCD /* Build configuration list for PBXNativeTarget "SteviaLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -735,8 +1587,17 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				131356BE54884448CA49C07BEDF4BB2A /* Debug */,
-				F090CD07A80273D5A73C8EA19224ADDB /* Release */,
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EEECBFA66C4F91C3638C5A2EA791258 /* Build configuration list for PBXNativeTarget "Pods-Game2048" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD22BE1E65647B2F123EF3B2AFE05098 /* Debug */,
+				36CC4F6F010E6D40A4028920E7ED722B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -750,11 +1611,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CFB640DDC7F4FCEF413C485F447C07A8 /* Build configuration list for PBXNativeTarget "Pods-Game2048" */ = {
+		ED5C15C705AB67930733A7E237A0A33A /* Build configuration list for PBXNativeTarget "Starscream" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07965E47D66731CF2ED9546924380151 /* Debug */,
-				6EC9DCA79855530A217DA84A9C87DCC7 /* Release */,
+				73968A14EF0365E654FA09AC14885BA9 /* Debug */,
+				7C0668AB3AEA46F2D33B4DD4322F041D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA16B8954D73698E5D90EA478D253901 /* Build configuration list for PBXNativeTarget "PromisesSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F7F8A673AF1C3E6758D16629C81DD35 /* Debug */,
+				B00502FBF71432912952A769EA506D96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
